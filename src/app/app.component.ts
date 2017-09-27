@@ -6,6 +6,9 @@ import {MeetingModelComponent} from './meeting-model/meeting-model.component';
 import {NewMeetingComponent} from './new-meeting/new-meeting.component';
 import{TaskListComponent}from './task-list/task-list.component';
 
+import {ServiceModuleService} from './service-module.service';
+
+
 
 @Component({
   selector: 'app-root',

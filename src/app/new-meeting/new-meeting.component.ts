@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewMeetingComponent implements OnInit {
 
+       
+
   constructor() { }
 
   ngOnInit() {
