@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {LandingComponent} from './landing/landing.component';
+
+
+
 import{ MeetingInfoComponent} from './meeting-info/meeting-info.component';
 import {MeetingMembersComponent} from './meeting-members/meeting-members.component';
 import {MeetingModelComponent} from './meeting-model/meeting-model.component';
