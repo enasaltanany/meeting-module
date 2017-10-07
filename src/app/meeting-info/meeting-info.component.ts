@@ -12,7 +12,9 @@ export class MeetingInfoComponent implements OnInit {
   constructor(private mInfo: MeetingInfoServiceService) { }
 
   ngOnInit() {
-  	this.mInfo.getData();
+  	
+  	
+  	 console.log(this.mInfo.getData());
   }
 
 }

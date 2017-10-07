@@ -15,6 +15,8 @@ import {ServiceModuleService} from './service-module.service';
 import{MeetingInfoServiceService} from './meeting-info/meeting-info-service.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { baseURL } from '../assets/shared/basrurl';
+import { Directive } from '@angular/core';
 
 
 @NgModule({
@@ -35,7 +37,11 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   ],
  
 
-  providers: [ServiceModuleService,MeetingInfoServiceService],
+  providers: [
+  {provide: 'BaseURL', useValue: baseURL},
+  ServiceModuleService,
+  MeetingInfoServiceService
+  ],
   bootstrap: [AppComponent]
   
 })
