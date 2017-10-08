@@ -7,58 +7,34 @@
 	</button>
 	
 </div>
-<ul >
-	<li> MEETING TITLE</li>
-	<li> ORGANIZER</li>
-	<li> DATE </li>
-	<li> LOCATION</li>
-	<li> STATUS</li>
-	<!-- <li> <a routerLink="/meeting-members" routerLinkActive="active">
-		<img src="./assets/drop-down.png" class="drop-down">
-	</a></li> -->
+<ul  class="Meeting_view_header">
+	<li class="col-lg-2"> MEETING TITLE</li>
+	<li class="col-lg-2"> ORGANIZER</li>
+	<li class="col-lg-2"> DATE </li>
+	<li class="col-lg-2"> LOCATION</li>
+	<li class="col-lg-2"> STATUS</li>
 </ul>
 <div>
-	<table>
-		<tr *ngFor=" let meeting of meetings "  >
-			
-			
-			<td >
+	<table class="Meeting_View">
+		<tr *ngFor=" let meeting of meetings " class="row Meeting_record"  >
+			<td class="col-lg-2 ">
 				{{meeting?.meetingTitle}}
 			</td>
-
-
-			<td>
+			<td class="col-lg-2">
 				{{meeting?.organizer}}
 			</td>
-
-
-			<td >
+			<td class="col-lg-2">
 				{{meeting?.date}}
 			</td>
-
-			<td>
+			<td class="col-lg-2">
 				{{meeting?.status}}
 			</td>
-
-			<td >
+			<td class="col-lg-2">
 				{{meeting?.location}}
 			</td>
-
-			<td><a routerLink="/meeting-members" routerLinkActive="active">
-		<img src="./assets/drop-down.png" class="drop-down">
-	</a></td>
+			<td class="col-lg-2"><a routerLink="/meeting-members" routerLinkActive="active">
+				<img src="./assets/drop-down.png" class="drop-down">
+			</a></td>
 		</tr>
 	</table>
 </div>
-<!-- <div>
-	<ul>
-		<li *ngFor=" let meeting of meetings">
-			{{meeting?.organizer}}
-		</li>
-		<li
-			*ngFor=" let meeting of meetings">
-			{{meeting?.meetingTitle}}
-		</li>
-		
-	</ul>
-</div> -->

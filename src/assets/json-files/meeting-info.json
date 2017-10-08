@@ -1,17 +1,18 @@
 [
 	{   "id":"1",
 		"meetingTitle":"Styling Guidelines",
-		"organizer":"Maryam Gad",
+		"organizer":"Omnya Amr",
 		"date":"25/9/2017" ,
 		"location":"Sypron Meeting Room" ,
 		"status":"done"
 	},
 	{   "id":"2",
-	    "meetingTitle":"Calendar UX - Hand Over",
-		"organizer":"Maryam Gad",
+	    "meetingTitle":"Meeting Min",
+		"organizer":"Enas ALtanany",
 		"date":"30/9/2017" ,
 		"location":"Sypron Meeting Room" ,
 		"status":"in_progress"
+
 	},
 	{   "id":"3",
 		"meetingTitle":"Sypron Events",
@@ -26,6 +27,7 @@
 		"date":"12/10/2017" ,
 		"location":"Sypron Meeting Room" ,
 		"status":"upcoming"
+
 	},
 	{   "id":"5",
 	    "meetingTitle":"Mobile Application",
@@ -39,6 +41,20 @@
 		"organizer":" Hesham",
 		"date":"30/11/2017" ,
 		"location":"Pepsi" ,
+		"status":"done"
+	},
+	{   "id":"7",
+	    "meetingTitle":"SimbaCompany",
+		"organizer":" Simba",
+		"date":"30/11/2017" ,
+		"location":"here" ,
+		"status":"upcoming"
+	},
+	{   "id":"8",
+	    "meetingTitle":"M22_CEO",
+		"organizer":" M22",
+		"date":"4/11/2017" ,
+		"location":"close" ,
 		"status":"upcoming"
 	}
 ]
