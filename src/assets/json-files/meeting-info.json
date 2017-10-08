@@ -1,44 +1,58 @@
 [
 	{   "id":"1",
 		"meetingTitle":"Styling Guidelines",
-		"organizer":"Maryam Gad",
+		"organizer":"Omnya Amr",
 		"date":"25/9/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"Done"
+		"status":"done"
 	},
 	{   "id":"2",
-	    "meetingTitle":"Calendar UX - Hand Over",
-		"organizer":"Maryam Gad",
+	    "meetingTitle":"Meeting Min",
+		"organizer":"Enas ALtanany",
 		"date":"30/9/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"In Progress"
+		"status":"in-progress"
 	},
 	{   "id":"3",
 		"meetingTitle":"Sypron Events",
 		"organizer":"Dr.Mostafa",
 		"date":"5/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"Upcoming"
+		"status":"upcoming"
 	},
 	{   "id":"4",
 		"meetingTitle":"Hyperloop",
 		"organizer":"Samar Fathy",
 		"date":"12/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"Upcoming"
+		"status":"in-progress"
 	},
 	{   "id":"5",
 	    "meetingTitle":"Mobile Application",
 		"organizer":"Ahmed Hisham",
 		"date":"30/11/2017" ,
 		"location":"Pepsi" ,
-		"status":"Upcomingv"
+		"status":"upcoming"
 	},
 	{   "id":"6",
 	    "meetingTitle":"roman bl r",
 		"organizer":" Hesham",
 		"date":"30/11/2017" ,
 		"location":"Pepsi" ,
-		"status":"Upcomingv"
+		"status":"done"
+	},
+	{   "id":"7",
+	    "meetingTitle":"SimbaCompany",
+		"organizer":" Simba",
+		"date":"30/11/2017" ,
+		"location":"here" ,
+		"status":"upcoming"
+	},
+	{   "id":"8",
+	    "meetingTitle":"M22_CEO",
+		"organizer":" M22",
+		"date":"4/11/2017" ,
+		"location":"close" ,
+		"status":"upcoming"
 	}
 ]
