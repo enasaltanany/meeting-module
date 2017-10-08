@@ -16,10 +16,10 @@ export class MeetingInfoServiceService {
   }
 
   getData(){
-    return this.http.get('../../assets/json-files/meeting-info.json').subscribe((res :Response) => {
-     console.log(res.json()); 
+    return this.http.get('../../assets/json-files/meeting-info.json').map((res :Response) => {
+     console.log("Inside service: ", res.json()); 
+     return res.json();
     })
-    
   }
 }
   

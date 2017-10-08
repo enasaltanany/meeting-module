@@ -6,7 +6,6 @@
 	Add Meeting
 	</button>
 	
-	
 </div>
 <ul >
 	<li> MEETING TITLE</li>
@@ -15,14 +14,51 @@
 	<li> LOCATION</li>
 	<li> STATUS</li>
 	<li> <a routerLink="/meeting-members" routerLinkActive="active">
-	<img src="./assets/drop-down.png" class="drop-down"> 
+		<img src="./assets/drop-down.png" class="drop-down">
 	</a></li>
 </ul>
-<div> 
-<ul>
-<li >
-	
-</li>
-	<!-- <li ng-repeat= "x in array "> </li> -->
-</ul>
+<div>
+	<table>
+		<tr *ngFor=" let meeting of meetings "  >
+			
+			
+			<td>
+				{{meeting?.organizer}}
+			</td>
+
+
+			<td>
+				{{meeting?.meetingTitle}}
+			</td>
+
+
+			<td>
+				{{meeting?.date}}
+			</td>
+
+			<td>
+				{{meeting?.status}}
+			</td>
+
+			<td>
+				{{meeting?.location}}
+			</td>
+
+			<td><a routerLink="/meeting-members" routerLinkActive="active">
+		<img src="./assets/drop-down.png" class="drop-down">
+	</a></td>
+		</tr>
+	</table>
 </div>
+<!-- <div>
+	<ul>
+		<li *ngFor=" let meeting of meetings">
+			{{meeting?.organizer}}
+		</li>
+		<li
+			*ngFor=" let meeting of meetings">
+			{{meeting?.meetingTitle}}
+		</li>
+		
+	</ul>
+</div> -->

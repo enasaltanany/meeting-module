@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Directive, ElementRef, Renderer2, HostListener  } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -16,7 +16,7 @@ import{MeetingInfoServiceService} from './meeting-info/meeting-info-service.serv
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { baseURL } from '../assets/shared/basrurl';
-import { Directive } from '@angular/core';
+
 
 
 @NgModule({
@@ -40,8 +40,10 @@ import { Directive } from '@angular/core';
   providers: [
   {provide: 'BaseURL', useValue: baseURL},
   ServiceModuleService,
-  MeetingInfoServiceService
+  MeetingInfoServiceService,
+
   ],
+  
   bootstrap: [AppComponent]
   
 })
