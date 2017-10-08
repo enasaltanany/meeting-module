@@ -7,7 +7,7 @@
 	</button>
 	
 </div>
-<ul  class="Meeting_view_header">
+<ul  class="meeting_view_header">
 	<li class="col-lg-2"> MEETING TITLE</li>
 	<li class="col-lg-2"> ORGANIZER</li>
 	<li class="col-lg-2"> DATE </li>
@@ -15,7 +15,7 @@
 	<li class="col-lg-2"> STATUS</li>
 </ul>
 <div>
-	<table class="Meeting_View">
+	<table class="meeting-view">
 		<tr *ngFor=" let meeting of meetings " class="row Meeting_record"  >
 			<td class="col-lg-2 ">
 				{{meeting?.meetingTitle}}
@@ -32,9 +32,12 @@
 			<td class="col-lg-2">
 				{{meeting?.location}}
 			</td>
-			<td class="col-lg-2"><a routerLink="/meeting-members" routerLinkActive="active">
-				<img src="./assets/drop-down.png" class="drop-down">
-			</a></td>
+			<td class="col-lg-2">
+				<!-- <img src="./assets/drop-down.png" class="drop-down" data-toggle="collapse" data-target="meeting-members"> -->
+
+				<button class="my-button"> <img src="./assets/drop-down.png"></button> 
+			</td>
+
 		</tr>
 	</table>
 </div>

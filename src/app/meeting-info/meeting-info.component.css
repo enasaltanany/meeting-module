@@ -65,7 +65,7 @@ tr:nth-child(odd){
 	margin-bottom: 29px;
 }
 
-.Meeting_View   td {
+.meeting-view   td {
 	font-size: 19px;
 	text-align: center;
 	padding-bottom: 28px;
@@ -73,6 +73,13 @@ tr:nth-child(odd){
 
 }
 
-tr:nth-child(odd) {
-	background-color: #e1dede;
+.my-button{
+
+	border:none;
+    width:100px;
+    height:100px;
+    background-color: transparent;
+    
 }
+
+
