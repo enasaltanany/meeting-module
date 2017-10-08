@@ -39,10 +39,23 @@ li {
     display: block;
     color: #4D6D9A;
     text-align: center;
-    padding: 25px 25px;
+    padding: 29px 29px;
     text-decoration: none;
 
 }
+
+td{
+
+	font-family: "Gill Sans";
+	padding: 30px;
+}
+
+tr:nth-child(odd){
+
+	background-color: #d3d3d3;
+}
+
+
 .drop-down{
 	height: 28px;
 	margin-bottom: 1px;

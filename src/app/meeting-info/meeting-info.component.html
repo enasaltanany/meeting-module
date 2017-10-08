@@ -13,26 +13,26 @@
 	<li> DATE </li>
 	<li> LOCATION</li>
 	<li> STATUS</li>
-	<li> <a routerLink="/meeting-members" routerLinkActive="active">
+	<!-- <li> <a routerLink="/meeting-members" routerLinkActive="active">
 		<img src="./assets/drop-down.png" class="drop-down">
-	</a></li>
+	</a></li> -->
 </ul>
 <div>
 	<table>
 		<tr *ngFor=" let meeting of meetings "  >
 			
 			
-			<td>
-				{{meeting?.organizer}}
-			</td>
-
-
-			<td>
+			<td >
 				{{meeting?.meetingTitle}}
 			</td>
 
 
 			<td>
+				{{meeting?.organizer}}
+			</td>
+
+
+			<td >
 				{{meeting?.date}}
 			</td>
 
@@ -40,7 +40,7 @@
 				{{meeting?.status}}
 			</td>
 
-			<td>
+			<td >
 				{{meeting?.location}}
 			</td>
 
