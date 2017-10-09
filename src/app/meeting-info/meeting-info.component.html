@@ -1,11 +1,9 @@
 <div class="meeting-info">
 	<input type="Text" placeholder="SEARCH" class="search-field" />
-	
 	<button class="add-meeting ">
 	<img src="./assets/add.png" class="add-icon">
 	Add Meeting
 	</button>
-	
 </div>
 <ul  class="Meeting_view_header">
 	<li class="col-lg-2"> MEETING TITLE</li>
@@ -34,40 +32,40 @@
 			</td>
 			<td class="col-lg-2">
 				<!-- <a *ng-click=" expande">
-					<img src="./assets/drop-down.png" class="drop-down">
+						<img src="./assets/drop-down.png" class="drop-down">
 				</a> -->
 			</td>
 		</tr>
 	</table>
 </div>
-<div class="expanded_div ">
-	<span class="col-lg-4">
-		Member
-	</span>
-	<span class="col-lg-4">
-		job title
-	</span>
-	
-	<span class="col-lg-4">
-		organization
-	</span>
-</div>
+<!-- <div class="expanded_div ">
+		<span class="col-lg-4">
+				Member
+		</span>
+		<span class="col-lg-4">
+				job title
+		</span>
+		
+		<span class="col-lg-4">
+				organization
+		</span>
+</div> -->
 <br/><br/><br/><br/><br/><br/>
 <table class="table">
 	<thead>
 		<tr>
-			<th>#</th>
 			<th>First Name</th>
 			<th>Last Name</th>
 			<th>Username</th>
+			<th></th>			
 			<th></th>
 		</tr>
 	</thead>
 	<tbody>
 		<ng-container *ngFor="let meeting of meetings">
-			<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle" (expand)="toggleExpand($event)" >
-			</tr>
-			<tr app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded"></tr>
-		</ng-container>		
-	</tbody>
+		<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle" (expand)="toggleExpand($event)" >
+		</tr>
+	<tr app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded"></tr>
+	</ng-container>
+</tbody>
 </table>
