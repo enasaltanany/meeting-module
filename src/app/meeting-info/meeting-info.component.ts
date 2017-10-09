@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Directive, ElementRef, Renderer2, HostListener  } from '@angular/core';
 import{MeetingInfoServiceService} from '../meeting-info/meeting-info-service.service';
+import { MeetingListItemComponent } from '../meeting-list-item/meeting-list-item.component';
+import { MeetingListItemDetailedComponent } from '../meeting-list-item/meeting-list-item-detailed.component';
 
 
 @Component({
@@ -22,9 +24,20 @@ export class MeetingInfoComponent implements OnInit {
   	 console.log("inside component:", meetings[0].meetingTitle);
   })
   }
+
+  toggleExpand(meeting) {
+    meeting.expanded = !meeting.expanded;
+  }
 }
 
-  
+// export interface MeetingMember{
+//    "id": number;
+//    "memberName":string;
+//    "JobTitle":string;
+//    "Organizatio":string;
+//  } 
+
+
 export interface MeetingModel {
   "id": number;
   "meetingTitle": string;
@@ -32,4 +45,5 @@ export interface MeetingModel {
 	"date": string;
 	"location": string;
 	"status": string;
+  "expanded": boolean;
 }

@@ -62,3 +62,10 @@ li {
 tr:nth-child(odd) {
 	background-color: #e1dede;
 }
+/*tr {
+	background-image: url(./assets/drop-down.png);
+}*/
+
+.expanded_div{
+	background-clip: gray;
+}
