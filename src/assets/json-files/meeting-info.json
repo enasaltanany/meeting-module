@@ -11,7 +11,8 @@
 		"organizer":"Enas ALtanany",
 		"date":"30/9/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"in-progress"
+		"status":"in_progress"
+
 	},
 	{   "id":"3",
 		"meetingTitle":"Sypron Events",
@@ -25,7 +26,8 @@
 		"organizer":"Samar Fathy",
 		"date":"12/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"in-progress"
+		"status":"upcoming"
+
 	},
 	{   "id":"5",
 	    "meetingTitle":"Mobile Application",
@@ -35,7 +37,7 @@
 		"status":"upcoming"
 	},
 	{   "id":"6",
-	    "meetingTitle":"roman bl r",
+	    "meetingTitle":"Roman",
 		"organizer":" Hesham",
 		"date":"30/11/2017" ,
 		"location":"Pepsi" ,

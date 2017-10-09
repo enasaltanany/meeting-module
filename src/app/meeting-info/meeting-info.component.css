@@ -33,16 +33,30 @@ ul {
 }
 
 li {
-	float: left;
-	font-size: 20px;
-	display: block;
-	color: #4D6D9A;
-	text-align: center;
-	padding: 25px 25px;
-	text-decoration: none;
+    float: left;
+    font-family: "Gill Sans";
+    font-size: 20px;
+    display: block;
+    color: #4D6D9A;
+    text-align: center;
+    padding: 29px 29px;
+    text-decoration: none;
+
 }
 
-.drop-down {
+td{
+
+	font-family: "Gill Sans";
+	padding: 30px;
+}
+
+tr:nth-child(odd){
+
+	background-color: #d3d3d3;
+}
+
+
+.drop-down{
 	height: 28px;
 	margin-bottom: 1px;
 }
@@ -51,7 +65,7 @@ li {
 	margin-bottom: 29px;
 }
 
-.Meeting_View   td {
+.meeting-view   td {
 	font-size: 19px;
 	text-align: center;
 	padding-bottom: 28px;
@@ -59,9 +73,15 @@ li {
 
 }
 
-tr:nth-child(odd) {
-	background-color: #e1dede;
+.my-button{
+
+	border:none;
+    width:100px;
+    height:100px;
+    background-color: transparent;
+    
 }
+<<<<<<< HEAD
 /*tr {
 	background-image: url(./assets/drop-down.png);
 }*/
@@ -69,3 +89,7 @@ tr:nth-child(odd) {
 .expanded_div{
 	background-clip: gray;
 }
+=======
+
+
+>>>>>>> ac035ba68b4ab624614f30bbb4929cc9aa28c4ac
