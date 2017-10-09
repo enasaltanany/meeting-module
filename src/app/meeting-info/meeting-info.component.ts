@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Directive, ElementRef, Renderer2, HostListener  } from '@angular/core';
-import{MeetingInfoServiceService} from '../meeting-info/meeting-info-service.service';
+import { MeetingInfoServiceService} from '../meeting-info/meeting-info-service.service';
 import { MeetingListItemComponent } from '../meeting-list-item/meeting-list-item.component';
 import { MeetingListItemDetailedComponent } from '../meeting-list-item/meeting-list-item-detailed.component';
 
@@ -19,8 +19,9 @@ export class MeetingInfoComponent implements OnInit {
 
   ngOnInit() {
   	
+
   this.mInfo.getData().subscribe((meetings: MeetingModel[])=> {
-   this.meetings=meetings;
+  this.meetings=meetings;
   	 console.log("inside component:", meetings[0].meetingTitle);
   })
   }
@@ -46,4 +47,7 @@ export interface MeetingModel {
 	"location": string;
 	"status": string;
   "expanded": boolean;
+  "memberName":string;
+  "JobTitle":string;
+  "Organizatio":string;
 }

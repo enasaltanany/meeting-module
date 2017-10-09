@@ -5,75 +5,29 @@
 	Add Meeting
 	</button>
 </div>
-<ul  class="meeting_view_header">
-	<li class="col-lg-2"> MEETING TITLE</li>
-	<li class="col-lg-2"> ORGANIZER</li>
-	<li class="col-lg-2"> DATE </li>
-	<li class="col-lg-2"> LOCATION</li>
-	<li class="col-lg-2"> STATUS</li>
-</ul>
-<div>
-	<table class="meeting-view">
-		<tr *ngFor=" let meeting of meetings " class="row Meeting_record"  >
-			<td class="col-lg-2 ">
-				{{meeting?.meetingTitle}}
-			</td>
-			<td class="col-lg-2">
-				{{meeting?.organizer}}
-			</td>
-			<td class="col-lg-2">
-				{{meeting?.date}}
-			</td>
-			<td class="col-lg-2">
-				{{meeting?.status}}
-			</td>
-			<td class="col-lg-2">
-				{{meeting?.location}}
-			</td>
-			<td class="col-lg-2">
-<<<<<<< HEAD
-				<!-- <a *ng-click=" expande">
-						<img src="./assets/drop-down.png" class="drop-down">
-				</a> -->
-			</td>
-=======
-				<!-- <img src="./assets/drop-down.png" class="drop-down" data-toggle="collapse" data-target="meeting-members"> -->
 
-				<button class="my-button"> <img src="./assets/drop-down.png"></button> 
-			</td>
 
->>>>>>> ac035ba68b4ab624614f30bbb4929cc9aa28c4ac
-		</tr>
-	</table>
-</div>
-<!-- <div class="expanded_div ">
-		<span class="col-lg-4">
-				Member
-		</span>
-		<span class="col-lg-4">
-				job title
-		</span>
-		
-		<span class="col-lg-4">
-				organization
-		</span>
-</div> -->
-<br/><br/><br/><br/><br/><br/>
+
+
 <table class="table">
-	<thead>
-		<tr>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Username</th>
-			<th></th>			
-			<th></th>
+	<thead >
+		<tr class="meeting_view_header">
+			<th class="col-lg-2"> MEETING TITLE </th>
+			<th class="col-lg-2"> ORGANIZER</th>
+			<th class="col-lg-2"> DATE </th>
+			<th class="col-lg-2"> LOCATION</th>
+			<th class="col-lg-2"> STATUS </th>
 		</tr>
 	</thead>
+
 	<tbody>
 		<ng-container *ngFor="let meeting of meetings">
 		<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle" (expand)="toggleExpand($event)" >
 		</tr>
-	<tr app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded"></tr>
-	</ng-container>
-</tbody>
+
+		<tr app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
+		</tr>
+		</ng-container>
+	</tbody>
+
 </table>

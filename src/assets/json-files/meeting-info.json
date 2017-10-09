@@ -4,14 +4,21 @@
 		"organizer":"Omnya Amr",
 		"date":"25/9/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"done"
+		"status":"done",
+		"memberName":"Enas ALtanany",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
+
 	},
 	{   "id":"2",
 	    "meetingTitle":"Meeting Min",
 		"organizer":"Enas ALtanany",
 		"date":"30/9/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"in_progress"
+		"status":"in_progress",
+		"memberName":"memberx",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
 
 	},
 	{   "id":"3",
@@ -19,14 +26,20 @@
 		"organizer":"Dr.Mostafa",
 		"date":"5/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"upcoming"
+		"status":"upcoming",
+		"memberName":"membery",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
 	},
 	{   "id":"4",
 		"meetingTitle":"Hyperloop",
 		"organizer":"Samar Fathy",
 		"date":"12/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"upcoming"
+		"status":"upcoming",
+		"memberName":"membery",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
 
 	},
 	{   "id":"5",
@@ -34,27 +47,39 @@
 		"organizer":"Ahmed Hisham",
 		"date":"30/11/2017" ,
 		"location":"Pepsi" ,
-		"status":"upcoming"
+		"status":"upcoming",
+		"memberName":"membery",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
 	},
 	{   "id":"6",
 	    "meetingTitle":"Roman",
 		"organizer":" Hesham",
 		"date":"30/11/2017" ,
 		"location":"Pepsi" ,
-		"status":"done"
+		"status":"done",
+		"memberName":"membery",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
 	},
 	{   "id":"7",
 	    "meetingTitle":"SimbaCompany",
 		"organizer":" Simba",
 		"date":"30/11/2017" ,
 		"location":"here" ,
-		"status":"upcoming"
+		"status":"upcoming",
+		"memberName":"membery",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
 	},
 	{   "id":"8",
 	    "meetingTitle":"M22_CEO",
 		"organizer":" M22",
 		"date":"4/11/2017" ,
 		"location":"close" ,
-		"status":"upcoming"
+		"status":"upcoming",
+		"memberName":"membery",
+        "JobTitle":"Front End",
+        "Organizatio":"Sypron"
 	}
 ]

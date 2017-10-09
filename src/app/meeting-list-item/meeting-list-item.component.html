@@ -1,29 +1,20 @@
-<!-- <ul  class="Meeting_member_header">
-	<li class="col-lg-2"> MEETING TITLE</li>
-	<li class="col-lg-2"> ORGANIZER</li>
-	<li class="col-lg-2"> DATE </li>
-</ul>
-<div>
-	<table class="Meeting_member_View">
-		<tr class="row Meeting_member_record"  >
-			<td class="col-lg-2 col-lg-offset-2 ">
-				
-			</td>
-			<td class="col-lg-2">
-				
-			</td>
-			<td class="col-lg-2">
-				
-			</td>
-		</tr>
-	</table>
-</div> -->
-
-<td>1</td>
-			<td>Mark</td>
-			<td>Otto</td>
-			<td>@mdo</td>
-			<td><a (click)="expandClicked()">
-					<img src="./assets/drop-down.png" class="drop-down">
-				</a></td>
-			
+<td class="col-lg-2 ">
+	{{meeting?.meetingTitle}}
+</td>
+<td class="col-lg-2">
+	{{meeting?.organizer}}
+</td>
+<td class="col-lg-2">
+	{{meeting?.date}}
+</td>
+<td class="col-lg-2">
+	{{meeting?.location}}
+</td>
+<td class="col-lg-2">
+	{{meeting?.status}}
+</td>
+<td>
+	<a (click)="expandClicked()">
+		<img src="./assets/drop-down.png" class="drop-down">
+	</a>
+</td>	

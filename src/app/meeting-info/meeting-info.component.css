@@ -33,32 +33,19 @@ ul {
 }
 
 li {
-    float: left;
-    font-family: "Gill Sans";
-    font-size: 20px;
-    display: block;
-    color: #4D6D9A;
-    text-align: center;
-    padding: 29px 29px;
-    text-decoration: none;
-
+	float: left;
+	font-family: "Gill Sans";
+	font-size: 20px;
+	display: block;
+	color: #4D6D9A;
+	text-align: center;
+	padding: 29px 29px;
+	text-decoration: none;
 }
 
-td{
-
+td {
 	font-family: "Gill Sans";
 	padding: 30px;
-}
-
-tr:nth-child(odd){
-
-	background-color: #d3d3d3;
-}
-
-
-.drop-down{
-	height: 28px;
-	margin-bottom: 1px;
 }
 
 .meeting-info {
@@ -69,27 +56,24 @@ tr:nth-child(odd){
 	font-size: 19px;
 	text-align: center;
 	padding-bottom: 28px;
-
-
 }
 
-.my-button{
-
-	border:none;
-    width:100px;
-    height:100px;
-    background-color: transparent;
-    
+.my-button {
+	border: none;
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
 }
-<<<<<<< HEAD
+
 /*tr {
 	background-image: url(./assets/drop-down.png);
 }*/
-
-.expanded_div{
-	background-clip: gray;
+.expanded_div {
+	background-color: gray;
 }
-=======
 
-
->>>>>>> ac035ba68b4ab624614f30bbb4929cc9aa28c4ac
+.meeting_view_header th {
+	font-size: 21px;
+	
+	background: white;
+}
