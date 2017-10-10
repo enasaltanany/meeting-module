@@ -1,5 +1,5 @@
 <div class="meeting-info">
-	<input type="Text" placeholder="SEARCH" class="search-field" />
+	<input type="Text" placeholder="Search" class="search-field" />
 	<button class="add-meeting ">
 	<img src="./assets/add.png" class="add-icon">
 	Add Meeting
@@ -10,13 +10,14 @@
 
 
 <table class="table">
-	<thead >
+	<thead>
 		<tr class="meeting_view_header">
 			<th class="col-lg-2"> MEETING TITLE </th>
 			<th class="col-lg-2"> ORGANIZER</th>
 			<th class="col-lg-2"> DATE </th>
 			<th class="col-lg-2"> LOCATION</th>
 			<th class="col-lg-2"> STATUS </th>
+			<th class="col-lg-2"> TEAM</th>
 		</tr>
 	</thead>
 
@@ -25,7 +26,7 @@
 		<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle" (expand)="toggleExpand($event)" >
 		</tr>
 
-		<tr app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
+		<tr class="meeting_info_members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
 		</tr>
 		</ng-container>
 	</tbody>
