@@ -23,7 +23,8 @@
 
 	<tbody>
 		<ng-container *ngFor="let meeting of meetings">
-		<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle" (expand)="toggleExpand($event)" >
+		<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle" 
+		(expand)="toggleExpand($event)">
 		</tr>
 
 		<tr class="meeting_info_members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">

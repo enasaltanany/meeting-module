@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
-// import { MeetingInfoServiceService} from '../meeting-info/meeting-info-service.service';
 import { MeetingModel } from '../meeting-info/meeting-info.component';
 
 @Component({
@@ -8,6 +7,7 @@ import { MeetingModel } from '../meeting-info/meeting-info.component';
   styleUrls: ['./meeting-list-item.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class MeetingListItemComponent implements OnInit {
 
   @Input()

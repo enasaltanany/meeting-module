@@ -1,4 +1,4 @@
-<td class="col-lg-2 ">
+<td class="col-lg-2 meeting_title">
 	{{meeting?.meetingTitle}}
 </td>
 <td class="col-lg-2">
@@ -15,6 +15,7 @@
 </td>
 <td>
 	<a (click)="expandClicked()">
-		<img src="./assets/drop-down.png" class="drop-down">
+		<img src="./assets/drop-down.png" class="drop-down"
+		 [ngClass]="{'flip_img' : meeting.expanded}">
 	</a>
 </td>	

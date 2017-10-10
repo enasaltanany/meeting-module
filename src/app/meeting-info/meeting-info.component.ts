@@ -31,13 +31,6 @@ export class MeetingInfoComponent implements OnInit {
   }
 }
 
-// export interface MeetingMember{
-//    "id": number;
-//    "memberName":string;
-//    "JobTitle":string;
-//    "Organizatio":string;
-//  } 
-
 
 export interface MeetingModel {
   "id": number;
