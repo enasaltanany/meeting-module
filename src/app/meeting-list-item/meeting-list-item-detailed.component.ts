@@ -13,7 +13,7 @@ export class MeetingListItemDetailedComponent implements OnInit {
   @Input()
   meeting;
 
-  // public expanded : boolean = true;
+ 
 
   constructor() { }
 

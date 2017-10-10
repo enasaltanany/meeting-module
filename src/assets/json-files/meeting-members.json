@@ -2,7 +2,12 @@
 	{   "id":"1",
 		"memberName":"Maryam Gad",
 		"jobTitle":"UX Designer",
-		"organization":"Sypron Solutions" 
+		"membertitle":[
+
+        "Sypron Solutions" ,
+        "SYpron whatever"
+
+		]
 		
 	},
 

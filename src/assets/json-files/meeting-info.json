@@ -5,81 +5,71 @@
 		"date":"25/9/2017" ,
 		"location":"Sypron Meeting Room" ,
 		"status":"done",
-		"memberName":"Enas Altanany",
-        "JobTitle":"Front End Developer",
-        "Organizatio":"Sypron"
 
+		"members": [{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		}]
 	},
+
 	{   "id":"2",
-	    "meetingTitle":"Meeting Minutes",
-		"organizer":"Enas Altanany",
-		"date":"30/9/2017" ,
-		"location":"Sypron Meeting Room" ,
-		"status":"in_progress",
-		"memberName":"Omnya Amr",
-        "JobTitle":"Front End Developer",
-        "Organizatio":"Sypron"
-
-	},
-	{   "id":"3",
 		"meetingTitle":"Sypron Events",
 		"organizer":"Dr.Mostafa",
 		"date":"5/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"upcoming",
-		"memberName":"Hesham",
-        "JobTitle":"Back-End Developer",
-        "Organizatio":"Sypron"
+		"status":"done",
+
+		"members": [{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		}]
 	},
-	{   "id":"4",
+    
+    {   "id":"3",
 		"meetingTitle":"Hyperloop",
 		"organizer":"Samar Fathy",
-		"date":"12/10/2017" ,
+		"date":"5/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"upcoming",
-		"memberName":"Enas",
-        "JobTitle":"Front End Developer",
-        "Organizatio":"Sypron"
-
-	},
-	{   "id":"5",
-	    "meetingTitle":"Mobile Application",
-		"organizer":"Ahmed Hisham",
-		"date":"30/11/2017" ,
-		"location":"Pepsi" ,
-		"status":"upcoming",
-		"memberName":"Enas",
-        "JobTitle":"Front End Developer",
-        "Organizatio":"Sypron"
-	},
-	{   "id":"6",
-	    "meetingTitle":"Roman",
-		"organizer":" Hesham",
-		"date":"30/11/2017" ,
-		"location":"Pepsi" ,
 		"status":"done",
-		"memberName":"Hesham",
-        "JobTitle":"Back-End Developer",
-        "Organizatio":"Sypron"
+
+		"members": [{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		}]
 	},
-	{   "id":"7",
-	    "meetingTitle":"SimbaCompany",
-		"organizer":" Simba",
-		"date":"30/11/2017" ,
-		"location":"Sypron" ,
-		"status":"upcoming",
-		"memberName":"Yasser",
-        "JobTitle":"Front End Developer",
-        "Organizatio":"Sypron"
-	},
-	{   "id":"8",
-	    "meetingTitle":"M22_CEO",
-		"organizer":" M22",
-		"date":"4/11/2017" ,
-		"location":"Sypron" ,
-		"status":"upcoming",
-		"memberName":"Mohamed Adel",
-        "JobTitle":"Business Analyst",
-        "Organizatio":"Sypron"
+
+	{   "id":"4",
+		"meetingTitle":"Calendar UX- Hand Over",
+		"organizer":"Maryam Gad",
+		"date":"5/10/2017" ,
+		"location":"Sypron Meeting Room" ,
+		"status":"done",
+
+		"members": [{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		}]
 	}
+
+
 ]

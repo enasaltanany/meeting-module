@@ -1,4 +1,37 @@
 .collapsed_list  {
 	color: gray;
-	  margin-left: 20px;
+	margin-left: 20px;
+}
+
+.member_list{
+
+	color: #4D6D9A;
+	
+}
+
+.member_list  > p {
+
+	display: inline;
+	padding-right: 14%;
+	padding-left: 0px;
+}
+
+.member_list_style {
+
+    display: block;
+	padding-right: 14%;
+	padding-left: 0px;
+	color: black;
+
+
+}
+
+.member_list_style  p {
+
+ 
+	display: inline;
+	padding-right: 16%;
+	padding-left: 0px;
+	text-align: center;
+
 }

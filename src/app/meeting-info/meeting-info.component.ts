@@ -18,11 +18,13 @@ export class MeetingInfoComponent implements OnInit {
   constructor(private mInfo: MeetingInfoServiceService) { }
 
   ngOnInit() {
-  	
+  
 
   this.mInfo.getData().subscribe((meetings: MeetingModel[])=> {
   this.meetings=meetings;
   	 console.log("inside component:", meetings[0].meetingTitle);
+     console.log("memberName:", meetings[0].members[1].memberName);
+  
   })
   }
 
@@ -40,7 +42,11 @@ export interface MeetingModel {
 	"location": string;
 	"status": string;
   "expanded": boolean;
+  "members": MeetingMember[];
+}
+
+export interface MeetingMember {
   "memberName":string;
-  "JobTitle":string;
-  "Organizatio":string;
+  "jobTitle":string;
+  "organization":string;
 }
