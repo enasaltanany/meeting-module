@@ -1,14 +1,36 @@
-<td class="member_list " colspan="6">
-	<p><b>Member Name</b> </p>
-	<p><b>Job Title</b>	</p>
-	<p><b>Organization</b> </p>
+<td  colspan="6">
+	<table class="Listed_Data">
+		
+		<thead>
+			<tr>
+				<th class="col-lg-4" colspan="4">
+					Member Name
+				</th>
+				<th class="col-lg-4" colspan="4">
+					Job Title
+				</th>
+				<th class="col-lg-4" colspan="4">
+					Organization
+				</th>
+			</tr>
+		</thead>
 
 
-	<div class="member_list_style " *ngFor=" let member of meeting.members ">
-		<p>{{member.memberName}}</p>
-		<p>{{member.jobTitle}}</p>
-		<p>{{member.organization}}</p>
-	</div>
+
+		<tbody>
+			<tr  *ngFor=" let member of meeting.members ">
+				<td class="Member_list_Style" class="col-lg-4" colspan="4">
+					{{member.memberName}}
+				</td>
+				<td class="Member_list_Style" class="col-lg-4" colspan="4">
+					{{member.jobTitle}}
+				</td>
+				<td class="Member_list_Style" class="col-lg-4" colspan="4">
+					{{member.organization}}
+				</td>
+			</tr>
+		</tbody>
 
 
+	</table>
 </td>

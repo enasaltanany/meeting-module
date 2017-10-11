@@ -11,7 +11,7 @@
 	{{meeting?.location}}
 </td>
 <td class="col-lg-2">
-	{{meeting?.status}}
+	{{meeting?.status | statusPipe }}
 </td>
 <td>
 	<a (click)="expandClicked()">

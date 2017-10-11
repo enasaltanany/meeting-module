@@ -11,7 +11,11 @@
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		},{
-			"memberName":"Enas",
+			"memberName":"Enas Altanany",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas Altanany",
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		}]
@@ -19,17 +23,17 @@
 
 	{   "id":"2",
 		"meetingTitle":"Sypron Events",
-		"organizer":"Dr.Mostafa",
+		"organizer": "Mostafa Ghareeb",
 		"date":"5/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"done",
+		"status":"upcoming",
 
 		"members": [{
 			"memberName":"Omnya Amr",
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		},{
-			"memberName":"Enas",
+			"memberName":"Enas Altanany",
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		}]
@@ -40,14 +44,14 @@
 		"organizer":"Samar Fathy",
 		"date":"5/10/2017" ,
 		"location":"Sypron Meeting Room" ,
-		"status":"done",
+		"status":"in_progress",
 
 		"members": [{
 			"memberName":"Omnya Amr",
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		},{
-			"memberName":"Enas",
+			"memberName":"Enas Altanany",
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		}]
@@ -65,7 +69,30 @@
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		},{
-			"memberName":"Enas",
+			"memberName":"Enas Altanany",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		}]
+	},
+
+
+	{   "id":"5",
+		"meetingTitle":"Hyperloop",
+		"organizer":"Samar Fathy",
+		"date":"5/10/2017" ,
+		"location":"Sypron Meeting Room" ,
+		"status":"upcoming",
+
+		"members": [{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas Altanany",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Omnya Amr",
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		}]

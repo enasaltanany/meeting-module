@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { MeetingModel } from '../meeting-info/meeting-info.component';
+import{statusPipe}  from './status-pipe.pipe';
 
 @Component({
   selector: '[app-meeting-list-item]',

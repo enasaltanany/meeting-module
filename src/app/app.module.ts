@@ -20,6 +20,9 @@ import { baseURL } from '../assets/shared/basrurl';
 import {MeetingListItemComponent} from './meeting-list-item/meeting-list-item.component';
 import {MeetingListItemDetailedComponent} from './meeting-list-item/meeting-list-item-detailed.component';
 
+import { Pipe,PipeTransform  } from '@angular/core';
+import{statusPipe}  from './meeting-list-item/status-pipe.pipe';
+
 
 @NgModule({
 
@@ -37,7 +40,8 @@ import {MeetingListItemDetailedComponent} from './meeting-list-item/meeting-list
     NewMeetingComponent,
     TaskListComponent,
     MeetingListItemComponent,
-    MeetingListItemDetailedComponent
+    MeetingListItemDetailedComponent,
+    statusPipe
   ],
  
 
@@ -45,6 +49,7 @@ import {MeetingListItemDetailedComponent} from './meeting-list-item/meeting-list
   {provide: 'BaseURL', useValue: baseURL},
   ServiceModuleService,
   MeetingInfoServiceService,
+ 
 
   ],
   

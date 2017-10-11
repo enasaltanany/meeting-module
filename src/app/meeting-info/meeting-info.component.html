@@ -1,13 +1,13 @@
-<div class="meeting-info">
-	<input type="Text" placeholder="Search" class="search-field" />
-	<button class="add-meeting ">
-	<img src="./assets/add.png" class="add-icon">
+<div class="Meeting_Info">
+	<input type="Text" placeholder="Search" class="Search_Field" />
+	<button class="Add_New_Meeting ">
+	<img src="./assets/add.png" class="Add_Icon">
 	Add Meeting
 	</button>
 </div>
 <table class="table">
-	<thead>
-		<tr class="meeting_view_header">
+	<thead class="Meeting_View_Header">
+		<tr>
 			<th class="col-lg-2"> MEETING TITLE </th>
 			<th class="col-lg-2"> ORGANIZER</th>
 			<th class="col-lg-2"> DATE </th>
@@ -16,14 +16,15 @@
 			<th class="col-lg-2"> TEAM</th>
 		</tr>
 	</thead>
+	
 	<tbody>
 		<ng-container *ngFor="let meeting of meetings">
-		<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle"
+		<tr app-meeting-list-item [meeting]="meeting" class="Accordion_Toggle"
 			(expand)="toggleExpand($event)">
 		</tr>
 		
 		
-		<tr class="meeting_info_members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
+		<tr class="Meeting_Info_Members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
 		</tr>
 		
 		</ng-container>
