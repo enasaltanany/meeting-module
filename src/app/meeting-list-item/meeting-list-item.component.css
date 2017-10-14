@@ -16,3 +16,13 @@
 	filter: FlipH;
 	-ms-filter: "FlipH";
 }
+
+a:hover{
+    text-decoration: none !important;
+}
+
+
+a {
+
+	color: black;
+}
