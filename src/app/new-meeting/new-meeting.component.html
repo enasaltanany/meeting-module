@@ -1,0 +1,16 @@
+<h2 class="Title"> New Meeting </h2>
+<div class="container">
+	<div class="row">
+		<label> Title </label>
+		<input type="text" name="" class="Meeting_Title">
+		<input type="date" name="" class="Meeting_Date">
+	</div>
+	<div class="row Members_Title">
+		<label class="col-lg-1 ">
+			Members:
+		</label>
+		<form  *ngFor=" let member of members" class=" Member_Selection col-lg-5">
+			<input type="checkbox" value="{{member.memberName}}" name="memberName">        
+		</form>
+	</div>
+</div>

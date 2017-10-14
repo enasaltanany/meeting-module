@@ -1,4 +1,28 @@
-.members_container{
+.Title {
+	font-size: 25px;
+	color: #4D6D9A;
+	margin-bottom: 0px;
+	text-align: left;
+	font-family: "Gill Sans";
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
 
-	border: solid  black 1px;
+.Member_Selection {
+	border: solid  #4D6D9A;
+	width: 268px;
+	height: auto;
+}
+
+.Members_Title {
+	margin-top: 4px;
+}
+
+.Members_Title label {
+	padding-left: 0px;
+}
+.Meeting_Title ,
+.Meeting_Date{
+border: solid #4D6D9A 2px ;
 }
