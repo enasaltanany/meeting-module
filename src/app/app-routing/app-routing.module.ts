@@ -15,11 +15,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 export const routes:Routes= [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
-{ path: 'home',  component: AppComponent},
+// { path: 'home',  component: AppComponent},
 {path:'add-new-meeting', component : NewMeetingComponent},
 {path:'meeting-tasks' , component:TaskListComponent},
 {path:'meeting-model',component:MeetingModelComponent},
-// {path:'meeting-members',component:MeetingMembersComponent},
+{path:'home',component:MeetingInfoComponent  },
+
   
 
 ]
