@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { MeetingModel } from '../meeting-info/meeting-info.component';
 import{statusPipe}  from './status-pipe.pipe';
+import {MeetingModelComponent} from'../meeting-model/meeting-model.component';
+
 
 @Component({
   selector: '[app-meeting-list-item]',
@@ -25,4 +27,11 @@ export class MeetingListItemComponent implements OnInit {
   expandClicked() {
     this.expand.next(this.meeting);
   }
+
+  openModal(){
+
+    // ('#myModal').modal('show');
+  }
+
+
 }
