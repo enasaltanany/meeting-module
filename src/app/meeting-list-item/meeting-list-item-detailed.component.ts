@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-
-import { MeetingModel } from '../meeting-info/meeting-info.component';
+import { MeetingMember } from '../Interface';
+import { MeetingModel } from '../Interface';
 
 @Component({
   selector: '[app-meeting-list-item-detailed]',

@@ -26,3 +26,6 @@
 .Meeting_Date{
 border: solid #4D6D9A 2px ;
 }
+
+.Member_Selection input{
+    display: block;}

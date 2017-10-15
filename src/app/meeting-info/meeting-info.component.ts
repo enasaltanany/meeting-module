@@ -3,8 +3,9 @@ import { Directive, ElementRef, Renderer2, HostListener  } from '@angular/core';
 import { MeetingInfoServiceService} from '../meeting-info/meeting-info-service.service';
 import { MeetingListItemComponent } from '../meeting-list-item/meeting-list-item.component';
 import { MeetingListItemDetailedComponent } from '../meeting-list-item/meeting-list-item-detailed.component';
-import{statusPipe}  from '../meeting-list-item/status-pipe.pipe';
-
+import {statusPipe}  from '../meeting-list-item/status-pipe.pipe';
+import { MeetingMember } from '../Interface';
+import { MeetingModel } from '../Interface';
 
 @Component({
   selector: 'app-meeting-info',
@@ -34,19 +35,3 @@ export class MeetingInfoComponent implements OnInit {
 }
 
 
-export interface MeetingModel {
-  "id": number;
-  "meetingTitle": string;
-	"organizer": string;
-	"date": string;
-	"location": string;
-	"status": string;
-  "expanded": boolean;
-  "members": MeetingMember[];
-}
-
-export interface MeetingMember {
-  "memberName":string;
-  "jobTitle":string;
-  "organization":string;
-}

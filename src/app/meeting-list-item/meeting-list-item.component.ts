@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
-import { MeetingMember } from '../meeting-info/meeting-info.component';
+import { MeetingMember } from '../Interface';
+import { MeetingModel } from '../Interface';
+
 import {statusPipe}  from './status-pipe.pipe';
 
 @Component({

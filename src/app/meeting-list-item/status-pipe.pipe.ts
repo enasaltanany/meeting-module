@@ -1,5 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { MeetingModel } from '../meeting-info/meeting-info.component';
+import { MeetingMember } from '../Interface';
+import { MeetingModel } from '../Interface';
+
 
  
 
