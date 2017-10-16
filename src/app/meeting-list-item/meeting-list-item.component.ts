@@ -7,6 +7,10 @@ import {statusPipe}  from './status-pipe.pipe';
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c790d526110725f2eeebb82b5340a332f8f1d5c
 @Component({
   selector: '[app-meeting-list-item]',
   templateUrl: './meeting-list-item.component.html',
@@ -24,10 +28,14 @@ export class MeetingListItemComponent implements OnInit {
   @Output()
   expand = new EventEmitter();
 
+<<<<<<< HEAD
   
 
 
   constructor(public activeModal: NgbModal) { }
+=======
+  constructor( ) { }
+>>>>>>> 2c790d526110725f2eeebb82b5340a332f8f1d5c
 
   ngOnInit() {
   }
@@ -36,11 +44,14 @@ export class MeetingListItemComponent implements OnInit {
     this.expand.next(this.meeting);
   }
 
+<<<<<<< HEAD
 
 open(content) {
   console.log(content);
     this.activeModal.open(content, {windowClass: 'no-opacity'});
   }
+=======
+>>>>>>> 2c790d526110725f2eeebb82b5340a332f8f1d5c
 
 
 

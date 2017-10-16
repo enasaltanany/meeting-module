@@ -22,8 +22,12 @@ import {MeetingListItemDetailedComponent} from './meeting-list-item/meeting-list
 import { Pipe,PipeTransform  } from '@angular/core';
 import{statusPipe}  from './meeting-list-item/status-pipe.pipe';
 
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
+
+
+
 
 
 
@@ -33,7 +37,11 @@ import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
    BrowserModule,
    AppRoutingModule,
    HttpModule,
+
    NgbModule.forRoot()
+
+
+
   ],
 
   declarations: [
