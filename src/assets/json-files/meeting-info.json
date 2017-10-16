@@ -114,6 +114,54 @@
    		"objectives":[
    			{"objectiveContent":"Review Criteria"},
    			{"objectiveContent":"Review Action Plan"}]
+	},
+	{   "id":"6",
+		"meetingTitle":"MeetingMin",
+		"organizer":"Enas Altanany",
+		"date":"4/12/2017" ,
+		"location":"Sypron Meeting Room" ,
+		"status":"done",
+
+		"members": [{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas Altanany",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		}],
+   		"objectives":[
+   			{"objectiveContent":"Review Criteria"},
+   			{"objectiveContent":"Review Action Plan"}]
+	},
+	{   "id":"7",
+		"meetingTitle":"Business",
+		"organizer":"Mohamed Adel",
+		"date":"5/10/2017" ,
+		"location":"Business Corner" ,
+		"status":"upcoming",
+
+		"members": [{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Enas Altanany",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		},{
+			"memberName":"Omnya Amr",
+			"jobTitle":"Front End Developer",
+			"organization":"Sypron"
+   		}],
+   		"objectives":[
+   			{"objectiveContent":"Review Criteria"},
+   			{"objectiveContent":"Review Action Plan"}]
 	}
 
 

@@ -3,7 +3,7 @@
 	margin-bottom: 1px;
 	cursor: pointer;
 }
-.meeting_title{
+.Meeting_Title{
 	cursor: pointer;
 }
 .flip_img {
@@ -32,8 +32,8 @@ a {
 	border: 2px solid #4d6d9a;
 	font-family: "Gill Sans";
 	font-size: 17px;
-	/* margin-left: 150px; */
 	margin-bottom: 20px;
+	/*border-radius: 5px;*/
 
 }
 .button_details:hover {
@@ -46,6 +46,7 @@ a {
 	font-size: 17px;
 	margin-left: 150px;
 	margin-bottom: 20px;
+	/*border-radius: 5px;*/
 
 }
 h4{
@@ -72,5 +73,23 @@ span{
 	opacity: 1;
 }
 .modal_Titles {
-	color: #6EA2BA;
+	color: #4D6D9A;
 }
+.Modal_Members td{
+	    padding-left: 69px; 
+}
+.Modal_Owner span {
+	display: inline;
+	padding-left: 44px;
+}
+
+.modal-header{
+	background-color: #4D6D9A;
+}
+
+
+.modal-title{
+	color: white;
+}
+
+

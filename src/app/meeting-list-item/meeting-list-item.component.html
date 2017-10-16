@@ -1,4 +1,4 @@
-<td class="col-lg-2 meeting_title">
+<td class="col-lg-2 Meeting_Title">
 	<a (click)="open(content)" > {{meeting?.meetingTitle}} </a>
 </td>
 <td class="col-lg-2">
@@ -29,6 +29,8 @@
 		<h4 class="modal-title">Meeting Agenda</h4>
 		
 	</div>
+
+
 	<div class="modal-body">
 		<div>
 			<h2>Meeting Information:</h2>
@@ -47,40 +49,43 @@
 			</span>
 			{{meeting.location}}
 			<br>
-			<span class="modal_Titles">
-				Members:
-			</span>
+			
 			<tbody >
-				<tr  *ngFor=" let member of meeting.members ">
-					<td> 
+				<span class="modal_Titles">
+					Members:
+				</span>
+				<tr class="Modal_Members" *ngFor=" let member of meeting.members ">
+					<td>
 						{{member.memberName}}
 					</td>
 				</tr>
 			</tbody>
+
 		</div>
-		<div>
+
+
+		<div class="Modal_Objective">
 			<h2>Objectives:</h2>
 			<tbody>
-				<tr  *ngFor=" let objective of meeting.objectives ">
+				<tr class="Modal_Members" *ngFor=" let objective of meeting.objectives ">
 					<td>
 						{{objective.objectiveContent}}
 					</td>
 				</tr>
 			</tbody>
 		</div>
-		<div>
+
+		<div class="Modal_Owner">
 			<h2>Owner:</h2>
 			<span>
-				{{meeting.organizer}}
-			</span>
+				
+			</span>{{meeting.organizer}}
 		</div>
 	</div>
 	
 	<div class="modal-footer">
 		<button type="button" class="button_close" (click)="c('Close click')">Close</button>
 		<button type="button" class="button_details">Set Details</button>
-		
-		
 	</div>
 	</ng-template>
 </body>
