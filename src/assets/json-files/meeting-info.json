@@ -19,10 +19,12 @@
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		}],
+
    		"objectives":[
-   			{"objectiveContent":" yes , just do it"},
-   			{"objectiveContent":"just do it"}]
-	},
+   			{"objectiveContent":" 1.Introduction"},
+   			{"objectiveContent":" 2. Action Plan"}]
+   	},
+	
 
 	{   "id":"2",
 		"meetingTitle":"Sypron Events",
@@ -40,9 +42,10 @@
 			"jobTitle":"Front End Developer",
 			"organization":"Sypron"
    		}],
+   		
    		"objectives":[
-   			{"objectiveContent":" Quality comes First"},
-   			{"objectiveContent":"just do it"}]
+   			{"objectiveContent":" 1.Introduction"},
+   			{"objectiveContent":" 2.Action Plan"}]
 	},
     
     {   "id":"3",
@@ -62,8 +65,8 @@
 			"organization":"Sypron"
    		}],
    		"objectives":[
-   			{"objectiveContent":"Review criteria"},
-   			{"objectiveContent":"just do it"}]
+   			{"objectiveContent":"Review Criteria"},
+   			{"objectiveContent":"Apply Changes"}]
 	},
 
 	{   "id":"4",
@@ -83,8 +86,8 @@
 			"organization":"Sypron"
    		}],
    		"objectives":[
-   			{"objectiveContent":"just do it"},
-   			{"objectiveContent":"Make necessary changes"}]
+   			{"objectiveContent":"Apply Changes"},
+   			{"objectiveContent":"Make Necessary Changes"}]
 	},
 
 
@@ -109,8 +112,8 @@
 			"organization":"Sypron"
    		}],
    		"objectives":[
-   			{"objectiveContent":"Review criteria"},
-   			{"objectiveContent":"just do it"}]
+   			{"objectiveContent":"Review Criteria"},
+   			{"objectiveContent":"Review Action Plan"}]
 	}
 
 

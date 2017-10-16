@@ -7,6 +7,8 @@ import {statusPipe}  from '../meeting-list-item/status-pipe.pipe';
 import { MeetingMember } from '../Interface';
 import { MeetingModel } from '../Interface';
 
+
+
 @Component({
   selector: 'app-meeting-info',
   templateUrl: './meeting-info.component.html',

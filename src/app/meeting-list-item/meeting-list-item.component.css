@@ -63,11 +63,14 @@ h2{
 .modal.fade .modal-dialog{
 	margin-top: 13%;
 }
-p{
+span{
 	font-family: "Gill Sans";
 	font-size: 15px;
 	margin-left: 25px;
 }
 .no-opacity {
 	opacity: 1;
+}
+.modal_Titles {
+	color: #6EA2BA;
 }

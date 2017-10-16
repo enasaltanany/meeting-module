@@ -16,3 +16,7 @@ export interface MeetingMember {
   "jobTitle":string;
   "organization":string;
 }
+
+export interface Objectives {
+  "objectiveContent":string;
+}
