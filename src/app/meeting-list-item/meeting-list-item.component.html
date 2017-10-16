@@ -1,5 +1,5 @@
 <td class="col-lg-2 Meeting_Title">
-	<a (click)="open(content)" > {{meeting?.meetingTitle}} </a>
+	<a (click)="open(content)"> {{meeting?.meetingTitle}} </a>
 </td>
 <td class="col-lg-2">
 	{{meeting?.organizer}}
@@ -29,15 +29,15 @@
 		<h4 class="modal-title">Meeting Agenda</h4>
 		
 	</div>
-
-
 	<div class="modal-body">
-		<div>
+		<div class="font">
 			<h2>Meeting Information:</h2>
 			
 			<span class="modal_Titles">
 				Title:
-			</span>{{meeting.meetingTitle}}
+			</span>
+			
+			{{meeting.meetingTitle}}
 			<br>
 			<span class="modal_Titles">
 				Date:
@@ -50,7 +50,7 @@
 			{{meeting.location}}
 			<br>
 			
-			<tbody >
+			<tbody>
 				<span class="modal_Titles">
 					Members:
 				</span>
@@ -60,10 +60,7 @@
 					</td>
 				</tr>
 			</tbody>
-
 		</div>
-
-
 		<div class="Modal_Objective">
 			<h2>Objectives:</h2>
 			<tbody>
@@ -74,12 +71,18 @@
 				</tr>
 			</tbody>
 		</div>
-
-		<div class="Modal_Owner">
-			<h2>Owner:</h2>
-			<span>
-				
-			</span>{{meeting.organizer}}
+		<div class="Modal_Owner" class="font">
+			<h2>Moderator:</h2> 
+            
+            <td>
+			{{meeting.organizer}}
+			</td>
+			
+			
+			
+			
+			
+			
 		</div>
 	</div>
 	

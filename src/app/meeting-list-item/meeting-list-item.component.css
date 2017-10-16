@@ -25,6 +25,7 @@ a {
 	border-color: #4d6d9a;
 	border-width: 3px;
 	margin-right: 80%;
+	font-family: "Gill Sans";
 }
 .button_details {
 	transition-duration: 0.4s;
@@ -61,6 +62,7 @@ h2{
 	color: #4D6D9A;
 	margin-left: 10px;
 }
+
 .modal.fade .modal-dialog{
 	margin-top: 13%;
 }
@@ -68,6 +70,7 @@ span{
 	font-family: "Gill Sans";
 	font-size: 15px;
 	margin-left: 25px;
+
 }
 .no-opacity {
 	opacity: 1;
@@ -77,10 +80,12 @@ span{
 }
 .Modal_Members td{
 	    padding-left: 69px; 
+	    font-family: "Gill Sans";
 }
 .Modal_Owner span {
 	display: inline;
 	padding-left: 44px;
+	font-family: "Gill Sans";
 }
 
 .modal-header{
@@ -90,6 +95,15 @@ span{
 
 .modal-title{
 	color: white;
+}
+
+.font{
+     font-family: "Gill Sans";
+
+}
+
+td{
+	padding-left: 69px;
 }
 
 
