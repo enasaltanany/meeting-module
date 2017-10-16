@@ -3,8 +3,6 @@ import { MeetingModelComponent } from './meeting-model.component';
 
 
 @Injectable()
-export class MeetingModelService{
-
-
-	
+export class MeetingModelService {
+ 
 }

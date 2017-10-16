@@ -2,12 +2,10 @@
 	height: 25px;
 	margin-bottom: 1px;
 	cursor: pointer;
-}	
-
+}
 .meeting_title{
 	cursor: pointer;
 }
-
 .flip_img {
 	-moz-transform: scaleY(-1);
 	-o-transform: scaleY(-1);
@@ -16,13 +14,60 @@
 	filter: FlipH;
 	-ms-filter: "FlipH";
 }
-
 a:hover{
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
-
-
 a {
-
 	color: black;
+}
+	.meeting_modal{
+	border-style: solid;
+	border-color: #4d6d9a;
+	border-width: 3px;
+	margin-right: 80%;
+}
+.button_details {
+	transition-duration: 0.4s;
+	background-color: white;
+	border: 2px solid #4d6d9a;
+	font-family: "Gill Sans";
+	font-size: 17px;
+	/* margin-left: 150px; */
+	margin-bottom: 20px;
+
+}
+.button_details:hover {
+	background-color: #4d6d9a;
+}
+.button_close{
+	background-color: white;
+	border: 2px solid #4d6d9a;
+	font-family: "Gill Sans";
+	font-size: 17px;
+	margin-left: 150px;
+	margin-bottom: 20px;
+
+}
+h4{
+	font-family: "Gill Sans";
+	font-size: 25px;
+	color: #4D6D9A;
+}
+h2{
+	font-family: "Gill Sans";
+	font-size: 20px;
+	font-weight: normal;
+	color: #4D6D9A;
+	margin-left: 10px;
+}
+.modal.fade .modal-dialog{
+	margin-top: 13%;
+}
+p{
+	font-family: "Gill Sans";
+	font-size: 15px;
+	margin-left: 25px;
+}
+.no-opacity {
+	opacity: 1;
 }

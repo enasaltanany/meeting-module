@@ -1,7 +1,5 @@
-
-
- <td class="col-lg-2 meeting_title">
-	 <a (click)="openModal()" > {{meeting?.meetingTitle}} </a>
+<td class="col-lg-2 meeting_title">
+	<a (click)="open(content)" > {{meeting?.meetingTitle}} </a>
 </td>
 <td class="col-lg-2">
 	{{meeting?.organizer}}
@@ -16,8 +14,60 @@
 	{{meeting?.status | statusPipe }}
 </td>
 <td>
-	<a (click)="expandClicked()">
+	<a (click)="expandClicked()" >
 		<img src="./assets/drop-down.png" class="drop-down"
-		 [ngClass]="{'flip_img' : meeting.expanded}">
+		[ngClass]="{'flip_img' : meeting.expanded}">
 	</a>
-</td>	
+</td>
+
+<body>
+
+<ng-template #content let-c="close" let-d="dismiss">
+		<div class="modal-header">
+		    <h4 class="modal-title">Meeting Agenda</h4>
+			 <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">   
+			 <span aria-hidden="true">&times;</span>
+             </button>
+			
+		</div>
+		<div class="modal-body">
+			<div>
+				<h2>Meeting Information:</h2>
+				<p>
+					Title: {{meeting.meetingTitle}}
+					Date: {{meeting.date}}
+					Location: {{meeting.location}}
+					Members: {{meeting.memberName}}
+					
+				</p>
+			</div>
+			<div>
+				<h2>Objectives:</h2>
+				<!-- <p>
+						
+					{{meeting.objectives}}
+						
+				</p>  -->
+			</div>
+			<div>
+				<h2>Owner:</h2>
+				<p>
+					
+					{{meeting.organizer}}
+					
+				</p>
+			</div>
+		</div>
+		
+		<div class="modal-footer">
+		    <button type="button" class="button_close" (click)="c('Close click')">Close</button>
+		    <button type="button" class="button_details">Set Details</button>
+			
+			
+		</div>
+
+
+
+</ng-template>
+
+</body>

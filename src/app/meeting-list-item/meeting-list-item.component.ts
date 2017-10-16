@@ -1,8 +1,10 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
+import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { MeetingMember } from '../Interface';
 import { MeetingModel } from '../Interface';
 import {statusPipe}  from './status-pipe.pipe';
+
 
 
 @Component({
@@ -14,25 +16,34 @@ import {statusPipe}  from './status-pipe.pipe';
 
 export class MeetingListItemComponent implements OnInit {
 
+
+
   @Input()
   meeting;
 
   @Output()
   expand = new EventEmitter();
 
-  constructor() { }
+  
+
+
+  constructor(public activeModal: NgbModal) { }
 
   ngOnInit() {
   }
 
-  expandClicked() {
+    expandClicked() {
     this.expand.next(this.meeting);
   }
 
-  openModal(){
 
-    // ('#myModal').modal('show');
+open(content) {
+  console.log(content);
+    this.activeModal.open(content, {windowClass: 'no-opacity'});
   }
+
+
+
 
 
 }
