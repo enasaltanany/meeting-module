@@ -5,6 +5,8 @@ import { MeetingModel } from '../Interface';
 import {statusPipe}  from './status-pipe.pipe';
 
 
+
+
 @Component({
   selector: '[app-meeting-list-item]',
   templateUrl: './meeting-list-item.component.html',
@@ -20,7 +22,7 @@ export class MeetingListItemComponent implements OnInit {
   @Output()
   expand = new EventEmitter();
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit() {
   }
@@ -29,10 +31,6 @@ export class MeetingListItemComponent implements OnInit {
     this.expand.next(this.meeting);
   }
 
-  openModal(){
-
-    // ('#myModal').modal('show');
-  }
 
 
 }

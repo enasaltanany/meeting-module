@@ -22,13 +22,14 @@ import {MeetingListItemDetailedComponent} from './meeting-list-item/meeting-list
 import { Pipe,PipeTransform  } from '@angular/core';
 import{statusPipe}  from './meeting-list-item/status-pipe.pipe';
 
-
+// import {PopupModule} from 'ng2-opd-popup';
 @NgModule({
 
    imports: [
    BrowserModule,
    AppRoutingModule,
-   HttpModule
+   HttpModule,
+   // PopupModule.forRoot(),
   ],
 
   declarations: [
