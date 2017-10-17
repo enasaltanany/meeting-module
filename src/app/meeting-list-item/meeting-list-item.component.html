@@ -26,32 +26,34 @@
 		<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
 		<span aria-hidden="true">&times;</span>
 		</button>
-		<h4 class="modal-title">Meeting Agenda</h4>
+		<h4 class="Modal_Main_Title">Meeting Agenda</h4>
 		
 	</div>
-	<div class="modal-body">
+	<div>
 		<div class="font">
-			<h2>Meeting Information:</h2>
+			<h2>
+			Meeting Information:
+			</h2>
 			
-			<span class="modal_Titles">
+			<span class="Meeting_Attr">
 				Title:
 			</span>
 			
 			{{meeting.meetingTitle}}
 			<br>
-			<span class="modal_Titles">
+			<span class="Meeting_Attr">
 				Date:
 			</span>
 			{{meeting.date}}
 			<br>
-			<span class="modal_Titles" >
+			<span class="Meeting_Attr" >
 				Location:
 			</span>
 			{{meeting.location}}
 			<br>
 			
 			<tbody>
-				<span class="modal_Titles">
+				<span class="Meeting_Attr">
 					Members:
 				</span>
 				<tr class="Modal_Members" *ngFor=" let member of meeting.members ">
