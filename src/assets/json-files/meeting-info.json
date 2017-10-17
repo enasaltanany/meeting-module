@@ -1,168 +1,250 @@
-[
-	{   "id":"1",
-		"meetingTitle":"Styling Guidelines",
-		"organizer":"Omnya Amr",
-		"date":"25/9/2017" ,
-		"location":"Sypron Meeting Room" ,
-		"status":"done",
+[{
+        "id": "1",
+        "meetingTitle": "Styling Guidelines",
+        "organizer": "Omnya Amr",
+        "date": "25/9/2017",
+        "location": "Sypron Meeting Room",
+        "status": "done",
 
-		"members": [{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		}],
+        "members": [
+        {
+            "id":"2"
+        },
+        {
+           "id":"3"  
+        },
+        {
+           "id":"5"  
+        }],
 
-   		"objectives":[
-   			{"objectiveContent":" 1.Introduction"},
-   			{"objectiveContent":" 2. Action Plan"}]
-   	},
-	
+        "objectives": [{
+            "objectiveContent": " 1.Introduction"
+        }, {
+            "objectiveContent": " 2. Action Plan"
+        }]
+    },
+    {
+        "id": "2",
+        "meetingTitle": "Sypron Events",
+        "organizer": "Mostafa Ghareeb",
+        "date": "5/10/2017",
+        "location": "Sypron Meeting Room",
+        "status": "upcoming",
 
-	{   "id":"2",
-		"meetingTitle":"Sypron Events",
-		"organizer": "Mostafa Ghareeb",
-		"date":"5/10/2017" ,
-		"location":"Sypron Meeting Room" ,
-		"status":"upcoming",
+       "members": [
+        {
+            "id":"8"
+        },
+        {
+           "id":"10"  
+        },
+        {
+           "id":"1"  
+        }],
+        "objectives": [{
+            "objectiveContent": " 1.Introduction"
+        }, {
+            "objectiveContent": " 2.Action Plan"
+        }]
+    },
+    {
+        "id": "3",
+        "meetingTitle": "Hyperloop",
+        "organizer": "Samar Fathy",
+        "date": "5/10/2017",
+        "location": "Sypron Meeting Room",
+        "status": "in_progress",
 
-		"members": [{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		}],
-   		
-   		"objectives":[
-   			{"objectiveContent":" 1.Introduction"},
-   			{"objectiveContent":" 2.Action Plan"}]
-	},
-    
-    {   "id":"3",
-		"meetingTitle":"Hyperloop",
-		"organizer":"Samar Fathy",
-		"date":"5/10/2017" ,
-		"location":"Sypron Meeting Room" ,
-		"status":"in_progress",
+        "members": [
+        {
+            "id":"0"
+        },
+        {
+           "id":"5"  
+        },
+        {
+           "id":"6"  
+        }],
 
-		"members": [{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		}],
-   		"objectives":[
-   			{"objectiveContent":"Review Criteria"},
-   			{"objectiveContent":"Apply Changes"}]
-	},
+        "objectives": [{
+            "objectiveContent": "Review Criteria"
+        }, {
+            "objectiveContent": "Apply Changes"
+        }]
+    },
+    {
+        "id": "4",
+        "meetingTitle": "Calendar UX- Hand Over",
+        "organizer": "Maryam Gad",
+        "date": "5/10/2017",
+        "location": "Sypron Meeting Room",
+        "status": "done",
 
-	{   "id":"4",
-		"meetingTitle":"Calendar UX- Hand Over",
-		"organizer":"Maryam Gad",
-		"date":"5/10/2017" ,
-		"location":"Sypron Meeting Room" ,
-		"status":"done",
+        "members": [
+        {
+            "id":"1"
+        },
+        {
+           "id":"2"  
+        },
+        {
+           "id":"3"  
+        }],
+        "objectives": [{
+            "objectiveContent": "Apply Changes"
+        }, {
+            "objectiveContent": "Make Necessary Changes"
+        }]
+    },
+    {
+        "id": "5",
+        "meetingTitle": "Hyperloop",
+        "organizer": "Samar Fathy",
+        "date": "5/10/2017",
+        "location": "Sypron Meeting Room",
+        "status": "upcoming",
 
-		"members": [{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		}],
-   		"objectives":[
-   			{"objectiveContent":"Apply Changes"},
-   			{"objectiveContent":"Make Necessary Changes"}]
-	},
+        "members": [
+        {
+            "id":"6"
+        },
+        {
+           "id":"7"  
+        },
+        {
+           "id":"8"  
+        }],
 
+        "objectives": [{
+            "objectiveContent": "Review Criteria"
+        }, {
+            "objectiveContent": "Review Action Plan"
+        }]
+    },
+    {
+        "id": "6",
+        "meetingTitle": "MeetingMin",
+        "organizer": "Enas Altanany",
+        "date": "4/12/2017",
+        "location": "Sypron Meeting Room",
+        "status": "done",
 
-	{   "id":"5",
-		"meetingTitle":"Hyperloop",
-		"organizer":"Samar Fathy",
-		"date":"5/10/2017" ,
-		"location":"Sypron Meeting Room" ,
-		"status":"upcoming",
+        "members": [
+        {
+            "id":"9"
+        },
+        {
+           "id":"10"  
+        },
+        {
+           "id":"11"  
+        }],
 
-		"members": [{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		}],
-   		"objectives":[
-   			{"objectiveContent":"Review Criteria"},
-   			{"objectiveContent":"Review Action Plan"}]
-	},
-	{   "id":"6",
-		"meetingTitle":"MeetingMin",
-		"organizer":"Enas Altanany",
-		"date":"4/12/2017" ,
-		"location":"Sypron Meeting Room" ,
-		"status":"done",
+        "objectives": [{
+            "objectiveContent": "Review Criteria"
+        }, {
+            "objectiveContent": "Review Action Plan"
+        }]
+    },
+    {
+        "id": "7",
+        "meetingTitle": "Business",
+        "organizer": "Mohamed Adel",
+        "date": "5/10/2017",
+        "location": "Business Corner",
+        "status": "upcoming",
 
-		"members": [{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		}],
-   		"objectives":[
-   			{"objectiveContent":"Review Criteria"},
-   			{"objectiveContent":"Review Action Plan"}]
-	},
-	{   "id":"7",
-		"meetingTitle":"Business",
-		"organizer":"Mohamed Adel",
-		"date":"5/10/2017" ,
-		"location":"Business Corner" ,
-		"status":"upcoming",
+        "members": [
+        {
+            "id":"11"
+        },
+        {
+           "id":"2"  
+        },
+        {
+           "id":"5"  
+        }],
 
-		"members": [{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Enas Altanany",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		},{
-			"memberName":"Omnya Amr",
-			"jobTitle":"Front End Developer",
-			"organization":"Sypron"
-   		}],
-   		"objectives":[
-   			{"objectiveContent":"Review Criteria"},
-   			{"objectiveContent":"Review Action Plan"}]
-	}
+        "objectives": [{
+            "objectiveContent": "Review Criteria"
+        }, {
+            "objectiveContent": "Review Action Plan"
+        }]
+    },
+    {
+        "id": "2",
+        "meetingTitle": "Sypron Events",
+        "organizer": "Mostafa Ghareeb",
+        "date": "5/10/2017",
+        "location": "Sypron Meeting Room",
+        "status": "upcoming",
+
+        "members": [
+        {
+            "id":"0"
+        },
+        {
+           "id":"3"  
+        },
+        {
+           "id":"7"  
+        }],
+
+        "objectives": [{
+            "objectiveContent": " 1.Introduction"
+        }, {
+            "objectiveContent": " 2.Action Plan"
+        }]
+    },
+     {
+        "id": "6",
+        "meetingTitle": "MeetingMin",
+        "organizer": "Enas Altanany",
+        "date": "4/12/2017",
+        "location": "Sypron Meeting Room",
+        "status": "done",
+
+        "members": [
+        {
+            "id":"3"
+        },
+        {
+           "id":"3"  
+        },
+        {
+           "id":"5"  
+        }],
+        "objectives": [{
+            "objectiveContent": "Review Criteria"
+        }, {
+            "objectiveContent": "Review Action Plan"
+        }]
+    },
+    {
+        "id": "5",
+        "meetingTitle": "Hyperloop",
+        "organizer": "Samar Fathy",
+        "date": "5/10/2017",
+        "location": "Sypron Meeting Room",
+        "status": "upcoming",
+
+        "members": [
+        {
+            "id":"0"
+        },
+        {
+           "id":"10"  
+        },
+        {
+           "id":"9"  
+        }],
+
+        "objectives": [{
+            "objectiveContent": "Review Criteria"
+        }, {
+            "objectiveContent": "Review Action Plan"
+        }]
+    }
 
 
 ]

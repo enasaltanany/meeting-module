@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import { MeetingMember } from '../Interface';
-import { MeetingModel } from '../Interface';
+import { MeetingMember , MeetingModel } from '../Interface';
+import { MemberServiceService} from '../Services/Members/member-service.service';
 
 @Component({
   selector: '[app-meeting-list-item-detailed]',
@@ -18,6 +18,7 @@ export class MeetingListItemDetailedComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	console.log(this.meeting.members);
   }
 
 }

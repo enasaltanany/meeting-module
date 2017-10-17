@@ -1,9 +1,8 @@
 import { Injectable }    from '@angular/core';
 import { Headers, Http, Response } from '@angular/http';
-
 import 'rxjs/add/operator/toPromise';
 import {Observable} from 'rxjs/Rx';
-import {MeetingInfoComponent} from './meeting-info.component';
+import {MeetingInfoComponent} from '../../meeting-info/meeting-info.component';
 
 @Injectable()
 export class MeetingInfoServiceService {
@@ -17,8 +16,7 @@ export class MeetingInfoServiceService {
 
   getData(){
     return this.http.get('../../assets/json-files/meeting-info.json').map((res :Response) => {
-     // console.log("Inside service: ", res.json()); 
-     return res.json();
+    return res.json();
     })
   }
 }

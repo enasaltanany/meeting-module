@@ -1,4 +1,6 @@
-import { MeetingInfoServiceService} from './meeting-info/meeting-info-service.service';
+import { MeetingInfoServiceService} from './Services/Meeting_Info/meeting-info-service.service';
+import { MemberServiceService} from './Services/Members/member-service.service';
+
 
 export interface MeetingModel {
   "id": number;
@@ -8,10 +10,11 @@ export interface MeetingModel {
 	"location": string;
 	"status": string;
   "expanded": boolean;
-  "members": MeetingMember[];
+  "members": number;
 }
 
 export interface MeetingMember {
+  "id": number;
   "memberName":string;
   "jobTitle":string;
   "organization":string;
