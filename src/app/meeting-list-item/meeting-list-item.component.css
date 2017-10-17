@@ -39,6 +39,7 @@ a {
 }
 .button_details:hover {
 	background-color: #4d6d9a;
+	color: white;
 }
 .button_close{
 	background-color: white;
