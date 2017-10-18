@@ -18,6 +18,7 @@ export class MeetingInfoComponent implements OnInit {
  
 
  public meetings :MeetingModel[];
+ 
 
 constructor(private mInfo: MeetingInfoServiceService) { }
 
