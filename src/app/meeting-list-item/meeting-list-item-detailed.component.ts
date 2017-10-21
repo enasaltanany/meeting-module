@@ -12,29 +12,43 @@ encapsulation: ViewEncapsulation.None
 export class MeetingListItemDetailedComponent implements OnInit {
 @Input()
 meeting;
+
 public members: MeetingMember[];
 
-public memberData : MeetingMember[];
+public memberData: MeetingMember[];
 
 
-constructor(private MemberService: MemberServiceService) { }
+
+constructor(private MemberService: MemberServiceService) {
+
+
+ }
+
 ngOnInit() {
  
   this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
   this.members=member;
+
   //console.log(this.members);
   this.getMembers();
+
 
 })
 }
 getMembers(){
+  this.memberData = new Array<MeetingMember>();
   for (var memberID of this.meeting.members) {
-    // console.log(memberID);
-    // console.log(this.members.find(x => x.id == memberID.id));
+ 
     var memberData = this.members.find(x => x.id == memberID.id);
+    this.memberData.push(memberData);
+    
+    // console.log(this.meeting.id);
+   
 
-    console.log(memberData);
   }
+  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+    console.log(this.memberData);
+    console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 }
 
 }

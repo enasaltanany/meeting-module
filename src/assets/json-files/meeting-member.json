@@ -1,7 +1,7 @@
 [   {
         "id": "1",
         "memberName": "Enas ALtanany",
-        "jobTitle": "Front End",
+        "jobTitle": "Front End Developer",
         "organization": "Sypron"
     }, {
         "id": "2",
@@ -11,22 +11,22 @@
     }, {
         "id": "3",
         "memberName": "Ahmed Hisham",
-        "jobTitle": "Head of software department",
+        "jobTitle": "Head of Software Department",
         "organization": "Sypron"
     }, {
         "id": "4",
         "memberName": "Mohamed Adel",
-        "jobTitle": "Business Analyses",
+        "jobTitle": "Business Analyst",
         "organization": "Sypron"
     }, {
         "id": "5",
         "memberName": "Hesham Osman",
-        "jobTitle": "Back End",
+        "jobTitle": "Back End Developer",
         "organization": "Sypron"
     }, {
         "id": "6",
-        "memberName": "Mackary",
-        "jobTitle": "Back End",
+        "memberName": "Makary",
+        "jobTitle": "Back End Developer",
         "organization": "Sypron"
     }, {
         "id": "7",
@@ -40,7 +40,7 @@
         "organization": "Sypron"
     }, {
         "id": "9",
-        "memberName": "Hessen",
+        "memberName": "Hussien",
         "jobTitle": "Robotics",
         "organization": "Sypron"
     }, {
@@ -50,7 +50,7 @@
         "organization": "Sypron"
     }, {
         "id": "11",
-        "memberName": "Samar Hyperloop",
+        "memberName": "Samar Fathy",
         "jobTitle": "Hyperloop",
         "organization": "Sypron"
     }, {

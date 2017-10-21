@@ -27,8 +27,8 @@ constructor(private mInfo: MeetingInfoServiceService) { }
 
     this.mInfo.getData().subscribe((meetings: MeetingModel[])=> {
         this.meetings=meetings;
-      	console.log("inside component:", meetings[0].meetingTitle);
-        console.log("memberName:", meetings[0].members[1].memberName);
+      	// console.log("inside component:", meetings[0].meetingTitle);
+       //  console.log("memberName:", meetings[0].members[1].memberName);
     })
   }
 

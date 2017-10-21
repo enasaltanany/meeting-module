@@ -6,6 +6,8 @@ import { MeetingModel } from '../Interface';
 import {statusPipe}  from './status-pipe.pipe';
 import { Objectives } from '../Interface';
 
+import { MemberServiceService} from '../Services/Members/member-service.service';
+
 
 
 
@@ -26,15 +28,30 @@ export class MeetingListItemComponent implements OnInit {
   @Output()
   expand = new EventEmitter();
 
+public members: MeetingMember[];
+
+public memberData: MeetingMember[];
 
   
 
 
-  constructor(public activeModal: NgbModal) { }
+  constructor(public activeModal: NgbModal, private MemberService: MemberServiceService) { }
 
 
 
   ngOnInit() {
+
+
+  this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
+  this.members=member;
+
+  //console.log(this.members);
+  this.getMembers();
+
+
+})
+
+
   }
 
     expandClicked() {
@@ -49,6 +66,22 @@ open(content) {
     this.activeModal.open(content, {windowClass: 'no-opacity'});
   }
 
+
+
+  getMembers(){
+  this.memberData = new Array<MeetingMember>();
+  for (var memberID of this.meeting.members) {
+ 
+    var memberData = this.members.find(x => x.id == memberID.id);
+    this.memberData.push(memberData);
+    
+    // console.log(this.meeting.id);
+   
+
+  }
+
+
+}
 
 }
 
