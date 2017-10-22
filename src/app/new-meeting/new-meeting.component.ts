@@ -1,6 +1,7 @@
 import { Component, OnInit ,Input } from '@angular/core';
 import { MeetingMember } from '../Interface';
 import {MemberServiceService} from '../Services/Members/member-service.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: '[app-new-meeting]',
@@ -9,16 +10,25 @@ import {MemberServiceService} from '../Services/Members/member-service.service';
 })
 
 export class NewMeetingComponent implements OnInit {
+public members: MeetingMember[];
 
-	  public members: MeetingMember[];
+  formgroup: FormGroup;                     
+  meeting_title:string = '';
+	 
 
-  constructor(private MemberService: MemberServiceService) { }
+  constructor(private MemberService: MemberServiceService , private FormBuilder: FormBuilder) {
+   
+    this.formgroup = FormBuilder.group ({
+    'meeting_title' : [null, Validators.required] 
+    });
+  }
+
 
   ngOnInit() {
 
     this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
     this. members=member;
-    console.log("new meeting component:", member[0].memberName);
+    console.log("new meeting component:", member);
     }) 
   }
 

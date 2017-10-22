@@ -42,13 +42,11 @@ getMembers(){
     var memberData = this.members.find(x => x.id == memberID.id);
     this.memberData.push(memberData);
     
-    // console.log(this.meeting.id);
+    // push in for filling the Array(memberData: MeetingMember[]) by the (memberData) element 
    
 
   }
-  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-    console.log(this.memberData);
-    console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+  
 }
 
 }

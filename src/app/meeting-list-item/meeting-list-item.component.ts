@@ -1,11 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-
 import { MeetingMember } from '../Interface';
 import { MeetingModel } from '../Interface';
 import {statusPipe}  from './status-pipe.pipe';
 import { Objectives } from '../Interface';
-
 import { MemberServiceService} from '../Services/Members/member-service.service';
 
 
@@ -34,29 +32,17 @@ public memberData: MeetingMember[];
 
   
 
+constructor(public activeModal: NgbModal, private MemberService: MemberServiceService) { }
 
-  constructor(public activeModal: NgbModal, private MemberService: MemberServiceService) { }
-
-
-
-  ngOnInit() {
-
-
+ngOnInit() {
   this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
   this.members=member;
+  this.getMembers();})
+}
 
-  //console.log(this.members);
-  this.getMembers();
-
-
-})
-
-
-  }
-
-    expandClicked() {
-    this.expand.next(this.meeting);
-  }
+expandClicked() {
+this.expand.next(this.meeting);
+}
 
 
 

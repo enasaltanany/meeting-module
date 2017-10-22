@@ -1,18 +1,27 @@
-<!-- <h2 class="Title"> New Meeting </h2>
-<div class="container">
-	<div class="row">
-		<label> Title </label>
-		<input type="text" name="" class="Meeting_Title">
-		<input type="date" name="" class="Meeting_Date">
-	</div>
-	<div class="row Members_Title">
-		<label class="col-lg-1 ">
-			Members: {{}}
-		</label>
-		<! <input type="text" [formControl]="name" name="">		 -->
-	<!-- </div> -->
-<!-- </div> --> 
-<!-- <form  class=" Member_Selection col-lg-5">
-<input  *ngFor=" let member of members" type="checkbox" value="" > -->
-<!-- {{members.memberName}} -->
-<!-- </form> -->
+<div class="container" >
+	<h2 class="Title"> New Meeting </h2>
+	<form [formGroup]="formgroup">
+		<div class="form-container">
+			<div class="row">
+				<label> Title
+					<input type="text" formControlName="meeting_title"  class="Meeting_Title">
+				</label>
+				<label> Date
+					<input type="date" >
+				</label>
+			</div>
+			
+			<label >
+				Members
+			</label>
+			<div class="Select_Members">
+				<div *ngFor= " let member of members" >
+					<input type="checkbox" name="" >
+					<span>
+						{{member.memberName}}
+					</span>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
