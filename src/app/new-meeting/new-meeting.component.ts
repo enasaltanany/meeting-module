@@ -1,8 +1,10 @@
 import { Component, OnInit ,Input } from '@angular/core';
-import { MeetingMember } from '../Interface';
+import { MeetingMember , Objectives } from '../Interface';
 import {MemberServiceService} from '../Services/Members/member-service.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MultiselectDropdownModule,IMultiSelectOption } from 'angular-2-dropdown-multiselect';
+import { FormBuilder, FormGroup, Validators , NgModel} from '@angular/forms';
+
+
 
 @Component({
   selector: '[app-new-meeting]',
@@ -12,9 +14,18 @@ import { MultiselectDropdownModule,IMultiSelectOption } from 'angular-2-dropdown
 
 export class NewMeetingComponent implements OnInit {
 
-public members: MeetingMember[];
+
 public myOptions: IMultiSelectOption[];
 
+
+public members: MeetingMember[];
+public Objectives :Objectives[];
+
+ Objective={
+
+   content:" ",
+ }
+ 
   formgroup: FormGroup;                     
   meeting_title:string = '';
 	 

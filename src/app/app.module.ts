@@ -17,7 +17,7 @@ import { Pipe,PipeTransform  } from '@angular/core';
 import {statusPipe}  from './meeting-list-item/status-pipe.pipe';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule , NgModel} from '@angular/forms';
 import {MemberServiceService} from './Services/Members/member-service.service';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 
@@ -31,7 +31,9 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
    HttpModule,
    ReactiveFormsModule,
    MultiselectDropdownModule,
-   NgbModule.forRoot()
+   NgbModule.forRoot(),
+   FormsModule
+
  ],
 
   declarations: [

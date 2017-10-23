@@ -12,29 +12,39 @@
 			</div>
 			
 			<label class="Members_List">
+				
 				Members
 			</label>
 			<div class="Select_Members">
-
-         <ss-multiselect-dropdown > 
-
-         <div *ngFor= " let member of members" >
-					<input type="checkbox" name="" >
-					<span>
-						{{member.memberName}}
-					</span>
-				</div> 
-
-		</ss-multiselect-dropdown>
-
-				<!-- <div *ngFor= " let member of members" >
-					<input type="checkbox" name="" >
-
-					<span>
-						{{member.memberName}}
-					</span>
-				</div> -->
+				
 			</div>
+			
+		</div>
+		<div>
+			<label>
+				Objectives
+			</label>
+			<input [(ngModel)]="Objective.content" [ngModelOptions]="{standalone: true}" type="text">
+			<span class="col-lg-12">
+				{{Objective.content}}
+			</span>
 		</div>
 	</form>
+	<button class="Meeting_Details">
+	Save
+	</button>
 </div>
+<!-- <ss-multiselect-dropdown >
+				<div *ngFor= " let member of members" >
+					<input type="checkbox" name="" >
+					<span>
+									{{member.memberName}}
+					</span>
+				</div>
+</ss-multiselect-dropdown> -->
+<!-- <div *ngFor= " let member of members" >
+		<input type="checkbox" name="" >
+		<span>
+							{{member.memberName}}
+		</span>
+</div> -->
