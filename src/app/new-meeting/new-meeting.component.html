@@ -24,27 +24,51 @@
 			<label>
 				Objectives
 			</label>
-			<input [(ngModel)]="Objective.content" [ngModelOptions]="{standalone: true}" type="text">
-			<span class="col-lg-12">
+			<input [(ngModel)]="Objective.content" [ngModelOptions]="{ standalone: true}" type="text"
+			name="Objective_Input" >
+			<span class="Add_Obj" (click)="clear()">
+				Add
+			</span>
+			<span class="col-lg-12" >
 				{{Objective.content}}
 			</span>
 		</div>
 	</form>
-	<button class="Meeting_Details">
+	<button class="Meeting_Details" (click)="open(content)">
 	Save
 	</button>
 </div>
+
+
+<!-- this is the Popup -->
+<body>
+	<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+		<span aria-hidden="true">&times;</span>
+		</button>
+		<h4 class="Modal_Main_Title">Create New Meeting </h4>
+	</div>
+	<div class="Modal_Content">
+		Your Meeting Has been saved Yaaaay!!
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="button_close" (click)="c('Close click')">Close</button>
+		<button type="button" class="button_details">Set Details</button>
+	</div>
+	</ng-template>
+</body>
 <!-- <ss-multiselect-dropdown >
 				<div *ngFor= " let member of members" >
-					<input type="checkbox" name="" >
-					<span>
-									{{member.memberName}}
-					</span>
+											<input type="checkbox" name="" >
+											<span>
+																					{{member.memberName}}
+											</span>
 				</div>
 </ss-multiselect-dropdown> -->
 <!-- <div *ngFor= " let member of members" >
-		<input type="checkbox" name="" >
-		<span>
-							{{member.memberName}}
-		</span>
+								<input type="checkbox" name="" >
+								<span>
+																			{{member.memberName}}
+								</span>
 </div> -->
