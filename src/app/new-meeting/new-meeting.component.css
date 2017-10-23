@@ -1,3 +1,42 @@
 .Select_Members{
 	height: 200px;
 }
+
+h2{
+
+	font-family: "Gill Sans";
+	font-size: 20px;
+	font-weight: normal;
+	color: #4D6D9A;
+	margin-left: 10px;
+}
+
+label{
+    font-family: "Gill Sans";
+    color: #4D6D9A;
+    font-weight: normal;
+    padding-left: 0px;
+}
+
+.Meeting_Members{
+
+	 padding-left: 0px;
+}
+
+input{
+
+	font-size: 15px;
+	color: black;
+}
+
+ss-multiselect-dropdown{
+ font-family: "Gill Sans";
+
+}
+
+
+
+form{
+
+	padding-left: 0px; 
+}

@@ -19,6 +19,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MemberServiceService} from './Services/Members/member-service.service';
+import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import {MemberServiceService} from './Services/Members/member-service.service';
    AppRoutingModule,
    HttpModule,
    ReactiveFormsModule,
+   MultiselectDropdownModule,
    NgbModule.forRoot()
  ],
 

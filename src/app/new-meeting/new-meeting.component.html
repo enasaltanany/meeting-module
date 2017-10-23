@@ -1,4 +1,4 @@
-<div class="container" >
+<div class="container">
 	<h2 class="Title"> New Meeting </h2>
 	<form [formGroup]="formgroup">
 		<div class="form-container">
@@ -11,16 +11,29 @@
 				</label>
 			</div>
 			
-			<label >
+			<label class="Members_List">
 				Members
 			</label>
 			<div class="Select_Members">
-				<div *ngFor= " let member of members" >
+
+         <ss-multiselect-dropdown > 
+
+         <div *ngFor= " let member of members" >
 					<input type="checkbox" name="" >
 					<span>
 						{{member.memberName}}
 					</span>
-				</div>
+				</div> 
+
+		</ss-multiselect-dropdown>
+
+				<!-- <div *ngFor= " let member of members" >
+					<input type="checkbox" name="" >
+
+					<span>
+						{{member.memberName}}
+					</span>
+				</div> -->
 			</div>
 		</div>
 	</form>
