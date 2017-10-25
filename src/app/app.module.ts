@@ -53,7 +53,7 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
   {provide: 'BaseURL', useValue: baseURL},
   ServiceModuleService,
   MeetingInfoServiceService,
-  NgbModal,
+  // NgbModal,
   MemberServiceService,
 
   ],
