@@ -12,8 +12,13 @@ import { MultiselectDropdownModule,IMultiSelectOption } from 'angular-2-dropdown
 
 export class NewMeetingComponent implements OnInit {
 
+optionsModel: number[];
+
 public members: MeetingMember[];
-public myOptions: IMultiSelectOption[];
+public memberData: MeetingMember[];
+// public myOptions:MeetingMember[];
+
+
 
   formgroup: FormGroup;                     
   meeting_title:string = '';
@@ -29,12 +34,25 @@ public myOptions: IMultiSelectOption[];
 
   ngOnInit() {
 
+
     this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
-    this. members=member;
+    this.members=member;
+    // memberM=member;
     console.log("new meeting component:", member);
+
+    for( var Option of this.members){
+
+       this.members.push(Option);
+
+} 
+    
+    
     }) 
 
-    // this.myOptions
+
   }
+
+
+
 
 }
