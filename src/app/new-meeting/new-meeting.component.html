@@ -3,46 +3,62 @@
 	<form [formGroup]="formgroup">
 		<div class="form-container">
 			<div class="row">
-				<label> Title
+				<label class="Title"> Title
 					<input type="text" formControlName="meeting_title"  class="Meeting_Title">
 				</label>
-				<label> Date
+				<label class="Date"> 
+				Date
 					<input type="date" >
 				</label>
 			</div>
 			
-			<label class="Members_List">
+			<label class="Drop_Down">
 				Members
 			</label>
-			<div class="Select_Members">
-
-
-
-		  <!--  <select multiple="multiple">
-           <option *ngFor= " let member of members" >{{member.memberName}}</option>
-           </select> -->
-
-        <ss-multiselect-dropdown [options]="myOptions" [(ngModel)]="optionsModel"  [ngModelOptions]="{standalone: true}">
-             
-
-        	
-        </ss-multiselect-dropdown> 
-
-        <!--  <div *ngFor= " let member of members" >
-					<input type="checkbox" name="" >
-					<span>
-						{{member.memberName}}
-					</span>
-				</div>  -->
-          
-
-		
-
-
-
-
-
+			<div >
+				<ss-multiselect-dropdown class="Select_Members" [options]="myOptions" [(ngModel)]="optionsModel" [ngModelOptions]="{standalone: true}" class="MultiSelect">
+				
+				</ss-multiselect-dropdown>
+				
+		    </div>
+				<label class="Objectives">
+					Objectives
+				</label>
+				
+				<input #content  type="text">
+				<button class="Add_Obj" (click)="Add_Clear(content)">
+					Add
+				</button>
+				<div>
+					<ul *ngFor=" let meetingObjective of meetingObjectives " >
+						<li class="Objectives_List">
+							{{meetingObjective}}
+						</li>
+					</ul>
+				
+				<button class="Meeting_Details" (click)="open(popup)">
+				Set Meeting
+				</button>
+				<ng-template #popup let-c="close" let-d="dismiss">
+				<div class="modal-header">
+					<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+					<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="Modal_Main_Title"> MEETING </h4>
+				</div>
+				<div class="Modal_Content">
+					
+					Your meeting has been saved.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button_close" (click)="c('Close click')">Close</button>
+					
+					
+					
+				</div>
+				</ng-template>
 			</div>
 		</div>
-	</form>
+	
+</form>
 </div>

@@ -1,25 +1,46 @@
 .Select_Members {
 	height: 200px;
 	overflow: hidden;
+
 }
 
 h2 {
 	font-family: "Gill Sans";
-	font-size: 20px;
+	font-size: 27px;
 	font-weight: normal;
 	color: #4D6D9A;
 	margin-left: 10px;
 }
+
 .modal.fade .modal-dialog{
 	margin-top: 13%;
 }
+.Objectives{
+font-family: "Gill Sans";
+	color: #4D6D9A;
+	font-weight: normal;
+	padding-left: 0px;
+	margin-left: 0px;
+	font-size: 20px;
+	margin-top: 30px;
 
+}
+.Title input{
+font-size: 15px;
+	color: black;
+	font-family: "Gill Sans";
+	height: auto;
+	width: 162px;
+     margin-left: 42px;
+
+}
 label {
 	font-family: "Gill Sans";
 	color: #4D6D9A;
 	font-weight: normal;
 	padding-left: 0px;
-	margin-left: 17px;
+	margin-left: 25px;
+	font-size: 20px;
 }
 
 .Meeting_Members {
@@ -29,6 +50,11 @@ label {
 input {
 	font-size: 15px;
 	color: black;
+	font-family: "Gill Sans";
+	height: auto;
+	width: 162px;
+    margin-left: 9px;
+
 }
 
 ss-multiselect-dropdown {
@@ -37,9 +63,8 @@ ss-multiselect-dropdown {
 
 form {
 	padding-left: 0px;
-	overflow: hidden;
+	
 }
-
 .Meeting_Details {
 	font-family: "Gill Sans";
 	font-size: 19px;
@@ -57,13 +82,23 @@ form {
 .Add_Obj {
 	cursor: pointer;
 	color: #4D6D9A;
+	font-family: "Gill Sans";
+	background-color: white;
+	border: 2px solid #4d6d9a;
+	font-size: 17px;
+	outline: 0px;
+	text-align: center;
+	height: 31px;
+	margin-top: 5px;
+	width: 70px;
+    margin-left: 17px;
+	
 }
-
 .modal-header {
 	background-color: #4D6D9A;
 }
-
 .Modal_Main_Title {
+	font-family: "Gill Sans";
 	color: white;
 }
 
@@ -71,26 +106,72 @@ form {
 	font-family: "Gill Sans";
 }
 
+.Drop_Down{
+	
+	    margin-left: 7px;
+	    margin-top: 19px;
+}
 .button_close {
-
 	background-color: white;
 	border: 2px solid #4d6d9a;
 	font-family: "Gill Sans";
 	font-size: 17px;
 	margin-left: 150px;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
-
-.Modal_Main_Title {
-	color: white;
-}
-
 .no-opacity {
 	opacity: 1;
 }
-
 .Modal_Content {
 	text-align: center;
 	margin: 31px;
 	font-size: 19px;
+	font-family: "Gill Sans";
+	}
+.button_details {
+	transition-duration: 0.4s;
+	background-color: white;
+	border: 2px solid #4d6d9a;
+	font-family: "Gill Sans";
+	font-size: 17px;
+	margin-bottom: 20px;
+
 }
+
+.Objectives_List{
+
+	font-family: "Gill Sans";
+	margin-left: 76px;
+    margin-top: 5px;
+}
+
+ .dropdown-menu {
+    display: block  !important ;
+    overflow-y: scroll !important;
+    max-height: 150px !important;
+    scroll-behavior: smooth !important;
+     height: 200px !important;
+     margin-left: 95px;
+}
+
+
+.Date{
+
+	width: 162px;
+    margin-left: 9px;
+}
+
+
+.btn-default{
+   overflow: hidden;
+	width: 160px;
+    margin-left: 95px;
+    margin-bottom: 0px;
+}
+
+.dropdown-item input {
+	width: 10px;
+}
+
+
+

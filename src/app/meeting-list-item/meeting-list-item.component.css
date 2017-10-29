@@ -20,7 +20,7 @@ a:hover{
 a {
 	color: black;
 }
-	.meeting_modal{
+.meeting_modal{
 	border-style: solid;
 	border-color: #4d6d9a;
 	border-width: 3px;
@@ -97,6 +97,7 @@ span{
 
 .Modal_Main_Title{
 	color: white;
+
 }
 
 .font{
