@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
-import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MeetingMember } from '../Interface';
 import { MeetingModel } from '../Interface';
 import {statusPipe}  from './status-pipe.pipe';
@@ -24,6 +24,7 @@ export class MeetingListItemComponent implements OnInit {
   meeting;
 
   @Output()
+
   expand = new EventEmitter();
 
 public members: MeetingMember[];
@@ -54,15 +55,13 @@ open(content) {
 
 
 
-  getMembers(){
+getMembers(){
   this.memberData = new Array<MeetingMember>();
   for (var memberID of this.meeting.members) {
  
     var memberData = this.members.find(x => x.id == memberID.id);
     this.memberData.push(memberData);
     
-    // console.log(this.meeting.id);
-   
 
   }
 

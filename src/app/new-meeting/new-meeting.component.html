@@ -16,27 +16,29 @@
 			</label>
 			<div class="Select_Members">
 
-         <ss-multiselect-dropdown [options]="members" > 
 
-       <!--   <div *ngFor= " let member of members" >
+
+		  <!--  <select multiple="multiple">
+           <option *ngFor= " let member of members" >{{member.memberName}}</option>
+           </select> -->
+
+        <ss-multiselect-dropdown [options]="myOptions" [(ngModel)]="optionsModel"  [ngModelOptions]="{standalone: true}">
+             
+
+        	
+        </ss-multiselect-dropdown> 
+
+        <!--  <div *ngFor= " let member of members" >
 					<input type="checkbox" name="" >
 					<span>
 						{{member.memberName}}
 					</span>
 				</div>  -->
+          
 
-		</ss-multiselect-dropdown>
-
-
-
+		
 
 
-
- <!-- <select multiple="multiple">
-
-   <option *ngFor= " let member of members" >{{member.memberName}}</option>
-    
- </select> -->
 
 
 
