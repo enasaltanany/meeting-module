@@ -1,4 +1,4 @@
-<td class="col-lg-2 Meeting_Title">
+	<td class="col-lg-2 Meeting_Title">
 	<a (click)="open(content)"> {{meeting?.meetingTitle}} </a>
 </td>
 <td class="col-lg-2">
@@ -90,7 +90,7 @@
 	
 	<div class="modal-footer">
 		<button type="button" class="button_close" (click)="c('Close click')">Close</button>
-		<button type="button" class="button_details">Set Details</button>
+		<button routerLink="/meeting-tasks" routerLinkActive="active-link" type="button" class="button_details">Set Details</button>
 	</div>
 	</ng-template>
 </body>

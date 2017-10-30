@@ -1,2 +1,70 @@
+<div class="container">
+	<h2 class="Title"> Task List </h2>
+	<form [formGroup]="formgroup">
+		
+		<div class="form-container">
+			
+			<label class="Tasks">
+				Task
+			</label>
+			
+			<input #content  type="text" class="Input_Task">	
+			
+			<label class="Date">
+				Due Date
+				<input #date type="date" >
+			</label>
+			<button class="Add_Task" [disabled]="(content.value==0)" (click)="Add_Clear(content,date)">
+			Add
+			</button>
+			<ul *ngFor=" let meetingObjective of meetingObjectives ">
+				<li >
+				 <div class="Task_List">{{meetingObjective}}</div>  <div class="Task_Date">{{taskDate}}</div>
+				</li>
+			</ul>
+			
+			<div>
+				
+				<label class="Drop_Down">
+					Members
+				</label>
+				<div class="Select">
+					<ss-multiselect-dropdown class="Select_Members" [options]="myOptions" [(ngModel)]="optionsModel" [ngModelOptions]="{standalone: true}" class="MultiSelect">
+					
+					</ss-multiselect-dropdown>
+					
+				</div>
+				<br>
+				<label class="Comment">
+					Comments
+				</label>
+				<br>
+				<input class="Comment_Input" type="text" name="" >
+				
+				
+			</div>
+		</div>
+		<button class="Task_Details" (click)="open(popup)">
+		Save
+		</button>
 
-
+		<ng-template #popup let-c="close" let-d="dismiss">
+				<div class="modal-header">
+					<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+					<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="Modal_Main_Title"> Task List </h4>
+				</div>
+				<div class="Modal_Content">
+					
+					Your tasks have been saved.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button_close" (click)="c('Close click')">Close</button>
+					
+				
+				</div>
+				</ng-template>
+		
+	</form>
+</div>

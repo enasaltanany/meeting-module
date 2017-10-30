@@ -9,7 +9,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   selector: '[app-new-meeting]',
   templateUrl: './new-meeting.component.html',
   styleUrls: ['./new-meeting.component.css'],
-  encapsulation: ViewEncapsulation.None
+encapsulation: ViewEncapsulation.None
 })
 
 export class NewMeetingComponent implements OnInit {

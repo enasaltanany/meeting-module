@@ -26,7 +26,7 @@
 				</label>
 				
 				<input #content  type="text">
-				<button class="Add_Obj" (click)="Add_Clear(content)">
+				<button class="Add_Obj" [disabled]="(content.value==0)" (click)="Add_Clear(content)">
 					Add
 				</button>
 				<div>
@@ -44,7 +44,7 @@
 					<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
 					<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="Modal_Main_Title"> MEETING </h4>
+					<h4 class="Modal_Main_Title"> Meeting </h4>
 				</div>
 				<div class="Modal_Content">
 					

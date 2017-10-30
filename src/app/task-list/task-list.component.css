@@ -1,45 +1,226 @@
-/*.dropdown-check-list {
-  display: inline-block;
+.Select_Members {
+  height: 200px;
+  overflow: hidden;
+  padding-left: 6px;
+
 }
-.dropdown-check-list .anchor {
-  position: relative;
+
+h2 {
+  font-family: "Gill Sans";
+  font-size: 27px;
+  font-weight: normal;
+  color: #4D6D9A;
+  margin-left: 2px;
+}
+
+.modal.fade .modal-dialog{
+  margin-top: 13%;
+}
+.Tasks{
+  font-family: "Gill Sans";
+  color: #4D6D9A;
+  font-weight: normal;
+  padding-left: 5px;
+  margin-left: 0px;
+  font-size: 20px;
+  margin-top: 30px;
+
+}
+
+.Comment{
+
+  padding-left: 0px;
+  margin-left: 5px;
+}
+
+.Comment_Input{
+
+  padding-left: 0px;
+  margin-left: 5px;
+  font-size: 15px;
+  color: black;
+  font-family: "Gill Sans";
+  height:150px;
+  width: 400px;
+}
+
+
+.Title input{
+  font-size: 15px;
+  color: black;
+  font-family: "Gill Sans";
+  height: auto;
+  width: 162px;
+  margin-left: 42px;
+
+}
+label {
+  font-family: "Gill Sans";
+  color: #4D6D9A;
+  font-weight: normal;
+  padding-left: 0px;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.Meeting_Members {
+  padding-left: 0px;
+}
+
+input {
+  font-size: 15px;
+  color: black;
+  font-family: "Gill Sans";
+  height: auto;
+  width: 162px;
+    margin-left: 9px;
+
+}
+
+ss-multiselect-dropdown {
+  font-family: "Gill Sans";
+}
+
+form {
+  padding-left: 0px;
+  
+}
+.Task_Details {
+  font-family: "Gill Sans";
+  font-size: 19px;
+  color: white;
+  display: inline-block;
+  background: #4D6D9A;
+  outline: 0px;
+  border-style: solid;
+  border-color: #4D6D9A;
+  float: right;
+  margin-right: 13px;
+  width: 118px;
+}
+
+.Add_Task {
   cursor: pointer;
-  display: inline-block;
-  padding: 5px 50px 5px 10px;
-  border: 1px solid #ccc;
+  color: #4D6D9A;
+  font-family: "Gill Sans";
+  background-color: white;
+  border: 2px solid #4d6d9a;
+  font-size: 17px;
+  outline: 0px;
+  text-align: center;
+  height: 31px;
+  margin-top: 5px;
+  width: 70px;
+  margin-left: 17px;
+  
 }
-.dropdown-check-list .anchor:after {
-  position: absolute;
-  content: "";
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  padding: 5px;
-  right: 10px;
-  top: 20%;
-  -moz-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+.modal-header {
+  background-color: #4D6D9A;
 }
-.dropdown-check-list .anchor:active:after {
-  right: 8px;
-  top: 21%;
+.Modal_Main_Title {
+  font-family: "Gill Sans";
+  color: white;
+  font-size: 25px;
 }
-.dropdown-check-list ul.items {
-  padding: 2px;
-  display: none;
-  margin: 0;
-  border: 1px solid #ccc;
-  border-top: none;
+
+.font {
+  font-family: "Gill Sans";
 }
-.dropdown-check-list ul.items li {
-  list-style: none;
+
+.Drop_Down{
+  
+      margin-left: 7px;
+      margin-top: 19px;
 }
-.dropdown-check-list.visible .anchor {
-  color: #0094ff;
+.button_close {
+  background-color: white;
+  border: 2px solid #4d6d9a;
+  font-family: "Gill Sans";
+  font-size: 17px;
+  margin-left: 150px;
+  margin-bottom: 20px;
 }
-.dropdown-check-list.visible .items {
-  display: block;
+.no-opacity {
+  opacity: 1;
 }
-    */
+.Modal_Content {
+  text-align: center;
+  margin: 31px;
+  font-size: 19px;
+  font-family: "Gill Sans";
+  }
+.button_details {
+  transition-duration: 0.4s;
+  background-color: white;
+  border: 2px solid #4d6d9a;
+  font-family: "Gill Sans";
+  font-size: 17px;
+  margin-bottom: 20px;
+
+}
+
+.Task_List{
+
+  font-family: "Gill Sans";
+  margin-left: 25px;
+  margin-top: 5px;
+  text-transform:uppercase;
+
+}
+
+li{
+  margin-left: 30px;
+  margin-top: 5px;
+
+}
+
+.Task_Date{
+  font-family: "Gill Sans";
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+ .dropdown-menu {
+    display: block  !important ;
+    overflow-y: scroll !important;
+    max-height: 150px !important;
+    scroll-behavior: smooth !important;
+     height: 200px !important;
+     margin-left: 95px;
+
+}
+
+
+.Date{
+
+  width: 162px;
+  margin-left: 9px;
+  display: unset;
+  padding-left: 33px;
+
+}
+
+
+.btn-default{
+   overflow: hidden;
+  width: 160px;
+    margin-left: 95px;
+    margin-bottom: 0px;
+}
+
+.dropdown-item input {
+  width: 10px;
+}
+
+.Select {
+    
+    padding-left: 6px !important ;
+}
+
+.Input_Task{
+  text-transform:uppercase;
+}
+
+
+
+
