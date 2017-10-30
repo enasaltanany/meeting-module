@@ -1,10 +1,11 @@
 <div class="container">
 	<h2 class="Title"> New Meeting </h2>
-	<form [formGroup]="formgroup">
+	<form [formGroup]="myForm" (ngSubmit="register(myForm)"" >
 		<div class="form-container">
 			<div class="row">
 				<label class="Title"> Title
-					<input type="text" formControlName="meeting_title"  class="Meeting_Title">
+					<input type="text" formControlName="meeting_title"  class="Meeting_Title" name="titel" formControlName="name" >
+					<show-errors [control]="myForm.controls.name"></show-errors>
 				</label>
 				<label class="Date"> 
 				Date

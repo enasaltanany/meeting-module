@@ -1,10 +1,10 @@
 import { Component, OnInit ,Input, ViewEncapsulation } from '@angular/core';
 import { MeetingMember,Objectives  } from '../Interface';
-import {MemberServiceService} from '../Services/Members/member-service.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MemberServiceService} from '../Services/Members/member-service.service';
+import { FormBuilder, FormGroup, Validators , FormControl , NgForm } from '@angular/forms';
 import { MultiselectDropdownModule,IMultiSelectOption } from 'angular-2-dropdown-multiselect';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
+import {ReactiveFormsModule} from '@angular/forms'
 @Component({
   selector: '[app-new-meeting]',
   templateUrl: './new-meeting.component.html',
@@ -20,17 +20,21 @@ public members: MeetingMember[];
 public memberData: MeetingMember[];
 meetingObjectives= Array<Objectives>();
 public x :string;
-  
+public myForm: FormGroup;
 
-
-
-  formgroup: FormGroup;                     
-  meeting_title:string = '';
+// old code
+  // formgroup: FormGroup;                     
+  // meeting_title:string = '';
 	 
+// value: any, validator?: ValidatorFn | ValidatorFn[],
+//     asyncValidator?: AsyncValidatorFn | AsyncValidatorFn[]
 
-  constructor(private MemberService: MemberServiceService , private FormBuilder: FormBuilder,public activeModal: NgbModal) {
+    
+  constructor(private MemberService: MemberServiceService ,private FormBuilder: FormBuilder,
+    public activeModal: NgbModal,
+   ) {
    
-    this.formgroup = FormBuilder.group ({
+    this.myForm = FormBuilder.group ({
     'meeting_title' : [null, Validators.required] 
     });
 
@@ -69,8 +73,20 @@ public x :string;
 
 
  })
+  this.myForm = new FormGroup({
+  'name': new FormControl()
+  });
  
 } 
+
+ printMyForm() {
+   console.log(this.myForm);
+ }
+
+ register(myForm: NgForm) {
+   console.log('Registration successful.');
+   console.log(myForm.value);
+ }
 
 
 
