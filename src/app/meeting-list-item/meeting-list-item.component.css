@@ -76,6 +76,9 @@ span{
 .no-opacity {
 	opacity: 1;
 }
+.opacity {
+	opacity: 0 !important;
+}
 .Meeting_Attr{
 	color: #4D6D9A;
 }

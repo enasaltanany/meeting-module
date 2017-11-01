@@ -5,7 +5,7 @@ import { MeetingModel } from '../Interface';
 import {statusPipe}  from './status-pipe.pipe';
 import { Objectives } from '../Interface';
 import { MemberServiceService} from '../Services/Members/member-service.service';
-
+import { NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -25,12 +25,11 @@ export class MeetingListItemComponent implements OnInit {
 
   @Output()
 
-  expand = new EventEmitter();
 
+expand = new EventEmitter();
 public members: MeetingMember[];
-
 public memberData: MeetingMember[];
-
+modalRef:NgbModalRef;
   
 
 constructor(public activeModal: NgbModal, private MemberService: MemberServiceService) { }
@@ -39,6 +38,7 @@ ngOnInit() {
   this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
   this.members=member;
   this.getMembers();})
+
 }
 
 expandClicked() {
@@ -50,9 +50,15 @@ this.expand.next(this.meeting);
 open(content) {
   console.log(content);
   console.log(this.meeting.objectives);
-    this.activeModal.open(content, {windowClass: 'no-opacity'});
+  this.modalRef  = this.activeModal.open(content, {windowClass: 'no-opacity'});
+
+
   }
 
+
+x(content){
+  this.modalRef.close();
+  }
 
 
 getMembers(){
@@ -67,6 +73,7 @@ getMembers(){
 
 
 }
+
 
 }
 

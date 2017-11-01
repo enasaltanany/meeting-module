@@ -1,18 +1,27 @@
 <div class="container">
-	<h2 class="Title"> New Meeting </h2>
-	<form [formGroup]="myForm" (ngSubmit="register(myForm)"" >
-		<div class="form-container">
-			<div class="row">
-				<label class="Title"> Title
-					<input type="text" formControlName="meeting_title"  class="Meeting_Title" name="titel" formControlName="name" >
-					<show-errors [control]="myForm.controls.name"></show-errors>
+	<h2 class="Title"> New Meeting
+	</h2>
+	<form [formGroup]="myform"  #ngFormName = "ngForm">
+		<div [hidden]=" myform.submitted">
+			<div class=" form-group">
+				<label for="name" class="Title">
+					Title
 				</label>
-				<label class="Date"> 
-				Date
-					<input type="date" >
-				</label>
+				<input type="text" id="name"
+				class ="form-control"
+				 formControlName=" name"  required />
+				
+				<div *ngIf=" name.invalid && ( name.dirty || name.touched)"
+					class=" alert alert-danger">
+					<div *ngIf=" name.errors.required">
+						Name is required.
+					</div>
+				</div>
 			</div>
-			
+			<label class="Date">
+				Date
+				<input type="date" >
+			</label>
 			<label class="Drop_Down">
 				Members
 			</label>
@@ -21,45 +30,40 @@
 				
 				</ss-multiselect-dropdown>
 				
-		    </div>
-				<label class="Objectives">
-					Objectives
-				</label>
-				
-				<input #content  type="text">
-				<button class="Add_Obj" [disabled]="(content.value==0)" (click)="Add_Clear(content)">
-					Add
-				</button>
-				<div>
-					<ul *ngFor=" let meetingObjective of meetingObjectives " >
-						<li class="Objectives_List">
-							{{meetingObjective}}
-						</li>
-					</ul>
-				
-				<button class="Meeting_Details" (click)="open(popup)">
-				Set Meeting
-				</button>
-				<ng-template #popup let-c="close" let-d="dismiss">
-				<div class="modal-header">
-					<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-					<span aria-hidden="true">&times;</span>
-					</button>
-					<h4 class="Modal_Main_Title"> Meeting </h4>
-				</div>
-				<div class="Modal_Content">
-					
-					Your meeting has been saved.
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="button_close" (click)="c('Close click')">Close</button>
-					
-					
-					
-				</div>
-				</ng-template>
 			</div>
+			<label class="Objectives">
+				Objectives
+			</label>
+			<input #content  type="text">
+			<button class="Add_Obj" [disabled]="(content.value==0)" (click)="Add_Clear(content)">
+			Add
+			</button>
+			<div>
+				<ul *ngFor=" let meetingObjective of meetingObjectives " >
+					<li class="Objectives_List">
+						{{meetingObjective}}
+					</li>
+				</ul>
+			</div>
+			<button class="Meeting_Details" (click)="open(popup)">
+			Set Meeting
+			</button>
+			<ng-template #popup let-c="close" let-d="dismiss">
+			<div class="modal-header">
+				<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+				<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="Modal_Main_Title"> Meeting </h4>
+			</div>
+			<div class="Modal_Content">
+				
+				Your meeting has been saved.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="button_close" (click)="c('Close click')">Close
+				</button>
+			</div>
+			</ng-template>
 		</div>
-	
-</form>
+	</form>
 </div>

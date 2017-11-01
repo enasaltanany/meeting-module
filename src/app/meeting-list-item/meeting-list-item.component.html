@@ -78,19 +78,15 @@
             
             <td>
 			{{meeting.organizer}}
-			</td>
-			
-			
-			
-			
-			
-			
+			</td>			
 		</div>
 	</div>
 	
 	<div class="modal-footer">
 		<button type="button" class="button_close" (click)="c('Close click')">Close</button>
-		<button routerLink="/meeting-tasks" routerLinkActive="active-link" type="button" class="button_details">Set Details</button>
+		<button  routerLink="/meeting-tasks" routerLinkActive="active-link" type="button" class="button_details" (click)="x(content)" >Set Details</button>
 	</div>
 	</ng-template>
 </body>
+
+

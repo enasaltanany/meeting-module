@@ -17,9 +17,13 @@ import { Pipe,PipeTransform  } from '@angular/core';
 import { statusPipe}  from './meeting-list-item/status-pipe.pipe';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule, ReactiveFormsModule , NgModel , } from '@angular/forms';
+import { ReactiveFormsModule , NgModel , Validators } from '@angular/forms';
 import { MemberServiceService} from './Services/Members/member-service.service';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+import { FormsModule}   from '@angular/forms';
+import { NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
+import { AbstractControl } from '@angular/forms';
+
 
 
 
@@ -32,7 +36,8 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
    MultiselectDropdownModule,
    NgbModule.forRoot(),
    FormsModule,
-   BrowserModule
+   BrowserModule,
+
 
  ],
 

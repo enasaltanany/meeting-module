@@ -4,12 +4,18 @@ import { MemberServiceService} from '../Services/Members/member-service.service'
 import { FormBuilder, FormGroup, Validators , FormControl , NgForm } from '@angular/forms';
 import { MultiselectDropdownModule,IMultiSelectOption } from 'angular-2-dropdown-multiselect';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import {ReactiveFormsModule} from '@angular/forms'
+import { ReactiveFormsModule} from '@angular/forms'
+import { FormsModule }   from '@angular/forms';
+import { AbstractControl } from '@angular/forms';
+
+
+
+
 @Component({
   selector: '[app-new-meeting]',
   templateUrl: './new-meeting.component.html',
   styleUrls: ['./new-meeting.component.css'],
-encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 
 export class NewMeetingComponent implements OnInit {
@@ -19,24 +25,15 @@ myOptions: IMultiSelectOption[]=[] ;
 public members: MeetingMember[];
 public memberData: MeetingMember[];
 meetingObjectives= Array<Objectives>();
-public x :string;
-public myForm: FormGroup;
+myform: FormGroup;
 
-// old code
-  // formgroup: FormGroup;                     
-  // meeting_title:string = '';
-	 
-// value: any, validator?: ValidatorFn | ValidatorFn[],
-//     asyncValidator?: AsyncValidatorFn | AsyncValidatorFn[]
-
+// ,public validator: ValidatorFn|null,
+     // public asyncValidator: AsyncValidatorFn|null
     
   constructor(private MemberService: MemberServiceService ,private FormBuilder: FormBuilder,
-    public activeModal: NgbModal,
-   ) {
+    public activeModal: NgbModal  )
+    {
    
-    this.myForm = FormBuilder.group ({
-    'meeting_title' : [null, Validators.required] 
-    });
 
     this.meetingObjectives=[];
   }
@@ -58,6 +55,8 @@ public myForm: FormGroup;
   
 
 
+ 
+
   ngOnInit() {
 
 
@@ -66,27 +65,25 @@ public myForm: FormGroup;
 
    this.myOptions = this.convertToMultiSelect();
 
-
-   console.log("Members", member);
-
    // console.log("MultiSelect",this.convertToMultiSelect());
 
 
  })
-  this.myForm = new FormGroup({
-  'name': new FormControl()
-  });
+
+  this.myform = new FormGroup({
+      'name': new FormControl( [Validators.required])
+    });
+  
+ 
  
 } 
 
- printMyForm() {
-   console.log(this.myForm);
- }
 
- register(myForm: NgForm) {
-   console.log('Registration successful.');
-   console.log(myForm.value);
- }
+get name() { return this.myform.get('name'); }
+
+
+
+
 
 
 
@@ -97,8 +94,6 @@ convertToMultiSelect() {
    options.push({ id: this.members[i].id, name: this.members[i].memberName})     
 
  }
-
-   console.log("Options", this.myOptions); 
    return options;
 
 }
