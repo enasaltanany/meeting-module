@@ -18,7 +18,7 @@ myOptions: IMultiSelectOption[]=[] ;
 public members: MeetingMember[];
 public memberData: MeetingMember[];
 meetingObjectives= Array<Objectives>();
-taskDate= Array<Objectives>();
+meetingObjective: Objectives;
 
 public x :string;
 
@@ -36,7 +36,7 @@ this.formgroup = FormBuilder.group ({
     });
 
     this.meetingObjectives=[];
-    this.taskDate=[];
+    
   }
 
   open(popup) {
@@ -44,16 +44,19 @@ this.formgroup = FormBuilder.group ({
     }
 
 
-    Add_Clear(content,date){
- 
-   this.meetingObjectives.push(content.value);
-   this.taskDate.push(date.valueAsDate);
+    Add_Clear(content,date: HTMLInputElement){
+   this.meetingObjective = {objectiveContent:content.value, date:date.valueAsDate};
+   this.meetingObjectives.push(this.meetingObjective);
+   
    content.value =" ";
-   date.value="mm/dd/yyyy";
-   
 
-   
-   // console.log("meetingObj" ,this.meetingObjectives);
+
+   //Reset Placeholder
+   date.value="mm/dd/yyyy";
+   date.valueAsDate = null;
+
+
+
   }
 
 

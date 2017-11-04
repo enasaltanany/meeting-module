@@ -1,6 +1,6 @@
 <div class="container">
 	<h2 class="Title"> Task List </h2>
-	<form [formGroup]="formgroup">
+	<form [formGroup]="formgroup" novalidate>
 		
 		<div class="form-container">
 			
@@ -8,7 +8,8 @@
 				Task
 			</label>
 			
-			<input #content  type="text" class="Input_Task">	
+			<input #content  type="text" class="Input_Task" required>
+				
 			
 			<label class="Date">
 				Due Date
@@ -19,7 +20,7 @@
 			</button>
 			<ul *ngFor=" let meetingObjective of meetingObjectives ">
 				<li >
-				 <div class="Task_List">{{meetingObjective}}</div>  <div class="Task_Date">{{taskDate}}</div>
+				 <div class="Task_List">{{meetingObjective.objectiveContent}}</div>  <div class="Task_Date">{{meetingObjective.date}}</div>
 				</li>
 			</ul>
 			
@@ -39,7 +40,7 @@
 					Comments
 				</label>
 				<br>
-				<input class="Comment_Input" type="text" name="" >
+				<textarea class="Comment_Input"> </textarea>
 				
 				
 			</div>
