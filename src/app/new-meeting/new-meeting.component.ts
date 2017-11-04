@@ -7,7 +7,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule} from '@angular/forms'
 import { FormsModule }   from '@angular/forms';
 import { AbstractControl } from '@angular/forms';
-
+// import { FormArray } from '@angular/forms';
 
 
 
@@ -27,8 +27,13 @@ public memberData: MeetingMember[];
 meetingObjectives= Array<Objectives>();
 myform: FormGroup;
 
+
 // ,public validator: ValidatorFn|null,
      // public asyncValidator: AsyncValidatorFn|null
+
+     // , validator: ValidatorFn|null,
+     // asyncValidator: AsyncValidatorFn|null
+
     
   constructor(private MemberService: MemberServiceService ,private FormBuilder: FormBuilder,
     public activeModal: NgbModal  )
@@ -71,7 +76,7 @@ myform: FormGroup;
  })
 
   this.myform = new FormGroup({
-      'name': new FormControl( [Validators.required])
+      name: new FormControl( "" ,Validators.required)
     });
   
  
