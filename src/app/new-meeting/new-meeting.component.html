@@ -4,12 +4,11 @@
 	<form [formGroup]="myform"  #ngFormName = "ngForm">
 		<div [hidden]=" myform.submitted">
 			<div class=" form-group">
-				<label for="name" class="Title">
+				<label  for="name" class="Title">
 					Title
 				</label>
-				<input type="text" id="name"
-				class ="form-control"
-				 formControlName=" name"  required />
+				<input id="name" class="form-control"
+               formControlName="name" required />
 				
 				<div *ngIf=" name.invalid && ( name.dirty || name.touched)"
 					class=" alert alert-danger">
