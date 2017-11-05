@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Directive, ElementRef, Renderer2, HostListener  } from '@angular/core';
+
 import { MeetingInfoServiceService} from '../Services/Meeting_Info/meeting-info-service.service';
 import { MeetingListItemComponent } from '../meeting-list-item/meeting-list-item.component';
 import { MeetingListItemDetailedComponent } from '../meeting-list-item/meeting-list-item-detailed.component';

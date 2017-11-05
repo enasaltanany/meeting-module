@@ -1,8 +1,7 @@
-
-<div class="Meeting_Info">
+<div class="Search_Area">
 	<input type="Text" placeholder="Search" class="Search_Field" />
 	<button routerLink="/add-new-meeting" class="Add_New_Meeting ">
-	<img src="./assets/add.png" class="Add_Icon">
+	<img src="./assets/add.png" class="Add_Meeting_Icon">
 	Add Meeting
 	</button>
 </div>
@@ -25,7 +24,7 @@
 		</tr>
 		
 		
-		<tr class="Meeting_Info_Members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
+		<tr class="Expand_Members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
 		</tr>
 		
 		</ng-container>

@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } fro
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MeetingMember } from '../Interface';
 import { MeetingModel } from '../Interface';
-import {statusPipe}  from './status-pipe.pipe';
+import { statusPipe}  from './status-pipe.pipe';
 import { Objectives } from '../Interface';
 import { MemberServiceService} from '../Services/Members/member-service.service';
 import { NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
