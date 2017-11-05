@@ -1,9 +1,12 @@
 import { Component, OnInit ,Input, ViewEncapsulation } from '@angular/core';
 import { MeetingMember,Objectives  } from '../Interface';
 import {MemberServiceService} from '../Services/Members/member-service.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators , FormControl , NgForm } from '@angular/forms';
 import { MultiselectDropdownModule,IMultiSelectOption } from 'angular-2-dropdown-multiselect';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule} from '@angular/forms'
+import { FormsModule }   from '@angular/forms';
+import { AbstractControl } from '@angular/forms';
 
 @Component({
   selector: 'app-task-list',
@@ -23,17 +26,13 @@ meetingObjective: Objectives;
 public x :string;
 
 
-formgroup: FormGroup;                     
- meeting_title:string = '';
-
-  constructor(private MemberService: MemberServiceService , private FormBuilder: FormBuilder,public activeModal: NgbModal) { 
-
+// formgroup: FormGroup;                     
+ // meeting_title:string = '';
+ myform: FormGroup;
 
 
-
-this.formgroup = FormBuilder.group ({
-    'meeting_title' : [null, Validators.required] 
-    });
+  constructor(private MemberService: MemberServiceService , 
+    private FormBuilder: FormBuilder,public activeModal: NgbModal) { 
 
     this.meetingObjectives=[];
     
@@ -77,8 +76,15 @@ this.formgroup = FormBuilder.group ({
 
 
  })
+  this.myform = new FormGroup({
+      name: new FormControl( "" ,Validators.required)
+    });
  
 } 
+get name() { return this.myform.get('name'); }
+
+
+
 
 
 convertToMultiSelect() {

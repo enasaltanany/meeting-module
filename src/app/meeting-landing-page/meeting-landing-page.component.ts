@@ -3,18 +3,18 @@ import { Directive, ElementRef, Renderer2, HostListener  } from '@angular/core';
 import { MeetingInfoServiceService} from '../Services/Meeting_Info/meeting-info-service.service';
 import { MeetingListItemComponent } from '../meeting-list-item/meeting-list-item.component';
 import { MeetingListItemDetailedComponent } from '../meeting-list-item/meeting-list-item-detailed.component';
-import {statusPipe}  from '../meeting-list-item/status-pipe.pipe';
+import { statusPipe}  from '../meeting-list-item/status-pipe.pipe';
 import { MeetingMember } from '../Interface';
 import { MeetingModel } from '../Interface';
 
 
 
 @Component({
-  selector: 'app-meeting-info',
-  templateUrl: './meeting-info.component.html',
-  styleUrls: ['./meeting-info.component.css']
+  selector: 'app-meeting-landing-page',
+  templateUrl: './meeting-landing-page.component.html',
+  styleUrls: ['./meeting-landing-page.component.css']
 })
-export class MeetingInfoComponent implements OnInit {
+export class MeetingLandingPage implements OnInit {
  
 
  public meetings :MeetingModel[];
