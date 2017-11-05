@@ -22,5 +22,10 @@ export interface MeetingMember {
 
 export interface Objectives {
   "objectiveContent":string;
+  
+}
+
+export interface Tasks{
+  "taskContent": string;
   "date": Date;
 }

@@ -21,6 +21,12 @@
             "objectiveContent": " 1.Introduction"
         }, {
             "objectiveContent": " 2. Action Plan"
+        }],
+
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -45,6 +51,11 @@
             "objectiveContent": " 1.Introduction"
         }, {
             "objectiveContent": " 2.Action Plan"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -70,6 +81,11 @@
             "objectiveContent": "Review Criteria"
         }, {
             "objectiveContent": "Apply Changes"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -94,6 +110,11 @@
             "objectiveContent": "Apply Changes"
         }, {
             "objectiveContent": "Make Necessary Changes"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -119,6 +140,11 @@
             "objectiveContent": "Review Criteria"
         }, {
             "objectiveContent": "Review Action Plan"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -144,6 +170,11 @@
             "objectiveContent": "Review Criteria"
         }, {
             "objectiveContent": "Review Action Plan"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -169,6 +200,11 @@
             "objectiveContent": "Review Criteria"
         }, {
             "objectiveContent": "Review Action Plan"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -194,6 +230,11 @@
             "objectiveContent": " 1.Introduction"
         }, {
             "objectiveContent": " 2.Action Plan"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
      {
@@ -218,6 +259,11 @@
             "objectiveContent": "Review Criteria"
         }, {
             "objectiveContent": "Review Action Plan"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     },
     {
@@ -243,6 +289,11 @@
             "objectiveContent": "Review Criteria"
         }, {
             "objectiveContent": "Review Action Plan"
+        }],
+        "tasks": [{
+            "taskContent": " 1.Introduction"
+        }, {
+            "taskContent": " 2. Action Plan"
         }]
     }
 

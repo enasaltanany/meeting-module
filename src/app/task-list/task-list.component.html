@@ -18,9 +18,9 @@
 			<button class="Add_Task" [disabled]="(content.value==0)" (click)="Add_Clear(content,date)">
 			Add
 			</button>
-			<ul *ngFor=" let meetingObjective of meetingObjectives ">
+			<ul *ngFor=" let meetingTask of meetingTasks ">
 				<li >
-				 <div class="Task_List">{{meetingObjective.objectiveContent}}</div>  <div class="Task_Date">{{meetingObjective.date}}</div>
+				 <div class="Task_List">{{meetingTask.taskContent}}</div>  <div class="Task_Date">{{meetingTask.date}}</div>
 				</li>
 			</ul>
 			

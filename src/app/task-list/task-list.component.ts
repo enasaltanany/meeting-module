@@ -1,5 +1,5 @@
 import { Component, OnInit ,Input, ViewEncapsulation } from '@angular/core';
-import { MeetingMember,Objectives  } from '../Interface';
+import { MeetingMember,Objectives,Tasks  } from '../Interface';
 import {MemberServiceService} from '../Services/Members/member-service.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MultiselectDropdownModule,IMultiSelectOption } from 'angular-2-dropdown-multiselect';
@@ -17,8 +17,8 @@ export class TaskListComponent implements OnInit {
 myOptions: IMultiSelectOption[]=[] ;
 public members: MeetingMember[];
 public memberData: MeetingMember[];
-meetingObjectives= Array<Objectives>();
-meetingObjective: Objectives;
+meetingTasks= Array<Tasks>();
+meetingTask: Tasks;
 
 public x :string;
 
@@ -35,7 +35,7 @@ this.formgroup = FormBuilder.group ({
     'meeting_title' : [null, Validators.required] 
     });
 
-    this.meetingObjectives=[];
+    this.meetingTasks=[];
     
   }
 
@@ -45,8 +45,8 @@ this.formgroup = FormBuilder.group ({
 
 
     Add_Clear(content,date: HTMLInputElement){
-   this.meetingObjective = {objectiveContent:content.value, date:date.valueAsDate};
-   this.meetingObjectives.push(this.meetingObjective);
+   this.meetingTask = {taskContent:content.value, date:date.valueAsDate};
+   this.meetingTasks.push(this.meetingTask);
    
    content.value =" ";
 
