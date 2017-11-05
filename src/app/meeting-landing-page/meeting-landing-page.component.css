@@ -1,11 +1,12 @@
-.Search_Field {
+.Search_Area {
 	font-family: "Gill Sans";
 	height: 33px;
 	margin-left: 8px;
 	font-size: 19px;
+	margin-bottom: 17px;
 }
 
-.Add_Icon {
+.Add_Meeting_Icon {
 	height: 21px;
 	color: white;
 }
@@ -23,7 +24,7 @@
 	margin-right: 13px;
 }
 
-thead {
+.Meeting_View_Header {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -49,24 +50,17 @@ tr:nth-child(odd) {
 	font-family: "Gill Sans";
 }
 
-.Meeting_Info {
+.Search_Field {
 	margin-bottom: 29px;
 }
 
-.Meeting-View   td {
+.Meeting-View td {
 	font-size: 20px;
 	text-align: center;
 	padding-bottom: 28px;
 }
 
-.my-button {
-	border: none;
-	width: 100px;
-	height: 100px;
-	background-color: transparent;
-}
-
-.Meeting_Info_Members {
+.Expand_Members {
 	font-family: "Gill Sans";
 }
 

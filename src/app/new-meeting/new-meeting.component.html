@@ -1,14 +1,14 @@
 <div class="container">
 	<h2 class="Title"> New Meeting
 	</h2>
-	<form [formGroup]="myform"  #ngFormName = "ngForm">
+	<form [formGroup]="myform"  #ngFormName = "ngForm" class="Add_New_Meeting_Form">
 		<div [hidden]=" myform.submitted">
 			<div class=" form-group">
 				<label  for="name" class="Title">
 					Title
 				</label>
 				<input id="name" class="form-control"
-               formControlName="name" required />
+				formControlName="name" required />
 				
 				<div *ngIf=" name.invalid && ( name.dirty || name.touched)"
 					class=" alert alert-danger">
@@ -19,21 +19,20 @@
 			</div>
 			<label class="Date">
 				Date
-				<input type="date" >
+				<input type="date" class="Date_Input_Field" >
 			</label>
 			<label class="Drop_Down">
 				Members
 			</label>
 			<div >
-				<ss-multiselect-dropdown class="Select_Members" [options]="myOptions" [(ngModel)]="optionsModel" [ngModelOptions]="{standalone: true}" class="MultiSelect">
-				
+				<ss-multiselect-dropdown class="Select_Members" [options]="myOptions" [(ngModel)]="optionsModel" [ngModelOptions]="{standalone: true}" >
 				</ss-multiselect-dropdown>
 				
 			</div>
 			<label class="Objectives">
 				Objectives
 			</label>
-			<input #content  type="text">
+			<input #content  type="text" class="Objectives_Input_Field">
 			<button class="Add_Obj" [disabled]="(content.value==0)" (click)="Add_Clear(content)">
 			Add
 			</button>
@@ -44,12 +43,13 @@
 					</li>
 				</ul>
 			</div>
-			<button class="Meeting_Details" (click)="open(popup)">
+			<button class="Set_Meeting_Details" (click)="open(popup)">
 			Set Meeting
 			</button>
+			
 			<ng-template #popup let-c="close" let-d="dismiss">
-			<div class="modal-header">
-				<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+			<div class="Modal_Header">
+				<button type="button" class="Close" aria-label="Close" (click)="d('Cross click')">
 				<span aria-hidden="true">&times;</span>
 				</button>
 				<h4 class="Modal_Main_Title"> Meeting </h4>
@@ -58,8 +58,9 @@
 				
 				Your meeting has been saved.
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="button_close" (click)="c('Close click')">Close
+			<div class="Modal-Footer">
+				<button type="button" class="Close_Button" (click)="c('Close click')">
+				Close
 				</button>
 			</div>
 			</ng-template>
