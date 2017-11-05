@@ -2,7 +2,7 @@ import { Injectable }    from '@angular/core';
 import { Headers, Http, Response } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import {Observable} from 'rxjs/Rx';
-import {MeetingInfoComponent} from '../../meeting-info/meeting-info.component';
+import {MeetingLandingPage} from '../../meeting-landing-page/meeting-landing-page.component';
 
 @Injectable()
 export class MeetingInfoServiceService {

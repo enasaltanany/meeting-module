@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 import { Directive, ElementRef, Renderer2, HostListener  } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { MeetingInfoComponent } from './meeting-info/meeting-info.component';
-import { MeetingModelComponent } from './meeting-model/meeting-model.component';
+import { MeetingLandingPage } from './meeting-landing-page/meeting-landing-page.component';  
 import { NewMeetingComponent } from './new-meeting/new-meeting.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { ServiceModuleService} from './service-module.service';
@@ -23,7 +22,7 @@ import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { FormsModule}   from '@angular/forms';
 import { NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import { AbstractControl } from '@angular/forms';
-// import { FormArray } from '@angular/forms';
+
 
 
 
@@ -43,8 +42,7 @@ import { AbstractControl } from '@angular/forms';
 
   declarations: [
     AppComponent,
-    MeetingInfoComponent,
-    MeetingModelComponent,
+    MeetingLandingPage,
     NewMeetingComponent,
     TaskListComponent,
     MeetingListItemComponent,
@@ -58,7 +56,6 @@ import { AbstractControl } from '@angular/forms';
   {provide: 'BaseURL', useValue: baseURL},
   ServiceModuleService,
   MeetingInfoServiceService,
-  // NgbModal,
   MemberServiceService,
 
   ],
