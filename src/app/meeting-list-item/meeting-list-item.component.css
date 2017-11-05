@@ -1,12 +1,22 @@
-.drop-down {
+a:hover {
+	text-decoration: none !important;
+}
+
+a {
+	color: black;
+}
+
+.Drop-Down {
 	height: 25px;
 	margin-bottom: 1px;
 	cursor: pointer;
 }
-.Meeting_Title{
+
+.Meeting_Title {
 	cursor: pointer;
 }
-.flip_img {
+
+.Flip_Img {
 	-moz-transform: scaleY(-1);
 	-o-transform: scaleY(-1);
 	-webkit-transform: scaleY(-1);
@@ -14,49 +24,37 @@
 	filter: FlipH;
 	-ms-filter: "FlipH";
 }
-a:hover{
-	text-decoration: none !important;
-}
-a {
-	color: black;
-}
-.meeting_modal{
-	border-style: solid;
-	border-color: #4d6d9a;
-	border-width: 3px;
-	margin-right: 80%;
-	font-family: "Gill Sans";
-}
-.button_details {
+
+.Button_Details {
 	transition-duration: 0.4s;
 	background-color: white;
 	border: 2px solid #4d6d9a;
 	font-family: "Gill Sans";
 	font-size: 17px;
-	margin-bottom: 20px;
-	/*border-radius: 5px;*/
-
+	margin-bottom: 20px;	/*border-radius: 5px;*/
 }
-.button_details:hover {
+
+.Button_Details:hover {
 	background-color: #4d6d9a;
 	color: white;
 }
-.button_close{
+
+.Button_Close {
 	background-color: white;
 	border: 2px solid #4d6d9a;
 	font-family: "Gill Sans";
 	font-size: 17px;
 	margin-left: 150px;
-	margin-bottom: 20px;
-	/*border-radius: 5px;*/
-
+	margin-bottom: 20px;	/*border-radius: 5px;*/
 }
-h4{
+
+h4 {
 	font-family: "Gill Sans";
 	font-size: 25px;
 	color: #4D6D9A;
 }
-h2{
+
+h2 {
 	font-family: "Gill Sans";
 	font-size: 20px;
 	font-weight: normal;
@@ -64,52 +62,51 @@ h2{
 	margin-left: 10px;
 }
 
-.modal.fade .modal-dialog{
+.modal.fade .modal-dialog {
 	margin-top: 13%;
 }
-span{
+
+span {
 	font-family: "Gill Sans";
 	font-size: 15px;
 	margin-left: 25px;
-
 }
+
 .no-opacity {
 	opacity: 1;
 }
+
 .opacity {
 	opacity: 0 !important;
 }
-.Meeting_Attr{
+
+.Meeting_Attr {
 	color: #4D6D9A;
 }
-.Modal_Members td{
-	    padding-left: 69px; 
-	    font-family: "Gill Sans";
+
+.Modal_Members td {
+	padding-left: 69px;
+	font-family: "Gill Sans";
 }
+
 .Modal_Owner span {
 	display: inline;
 	padding-left: 44px;
 	font-family: "Gill Sans";
 }
 
-
-.modal-header{
+.Modal_Header {
 	background-color: #4D6D9A;
 }
 
-
-.Modal_Main_Title{
+.Modal_Main_Title {
 	color: white;
-
 }
 
-.font{
-     font-family: "Gill Sans";
-
+.font {
+	font-family: "Gill Sans";
 }
 
-td{
+td {
 	padding-left: 69px;
 }
-
-

@@ -8,33 +8,9 @@
 	padding-bottom: 10px;
 }
 
-.Listed_Data{
+.Listed_Data {
 	text-align: center;
-    margin: 9px auto;
-    width: 66%;
-
+	margin: 9px auto;
+	width: 66%;
 }
-
-
-.Member_list_Style {
-
-    display: block;
-	padding-right: 16%;
-	padding-left: 0px;
-	color: black;
-}
-
-.Member_list_Style   {
-
-	
-	padding-right: 11%;
-    padding-left: 0px;
-    margin-left: 20px;
-    width: 360px;
-	
-}
-
-
-
-
 

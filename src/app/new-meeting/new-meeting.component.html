@@ -12,7 +12,7 @@
 				
 				<div *ngIf=" name.invalid && ( name.dirty || name.touched)"
 					class=" alert alert-danger">
-					<div *ngIf=" name.errors.required">
+					<div *ngIf=" name.errors.required" class="Alert_Message">
 						Meeting title is required.
 					</div>
 				</div>

@@ -9,100 +9,65 @@ import { FormsModule }   from '@angular/forms';
 import { AbstractControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-task-list',
-  templateUrl: './task-list.component.html',
-  styleUrls: ['./task-list.component.css'],
-  encapsulation: ViewEncapsulation.None
+selector: 'app-task-list',
+templateUrl: './task-list.component.html',
+styleUrls: ['./task-list.component.css'],
+encapsulation: ViewEncapsulation.None
 })
+
 export class TaskListComponent implements OnInit {
 
+  myOptions: IMultiSelectOption[]=[] ;
+  public members: MeetingMember[];
+  public memberData: MeetingMember[];
+  meetingTasks= Array<Tasks>();
+  meetingTask: Tasks;
+  public x :string;
+  myform: FormGroup;
 
-myOptions: IMultiSelectOption[]=[] ;
-public members: MeetingMember[];
-public memberData: MeetingMember[];
-meetingTasks= Array<Tasks>();
-meetingTask: Tasks;
-
-public x :string;
-
-
-// formgroup: FormGroup;                     
- // meeting_title:string = '';
- myform: FormGroup;
-
-
-  constructor(private MemberService: MemberServiceService , 
-    private FormBuilder: FormBuilder,public activeModal: NgbModal) { 
-
+  constructor(private MemberService: MemberServiceService ,
+  private FormBuilder: FormBuilder,public activeModal: NgbModal) {
     this.meetingTasks=[];
-    
+
   }
+
 
   open(popup) {
     this.activeModal.open(popup, {windowClass: 'no-opacity'});
-    }
+  }
 
+  Add_Clear(content,date: HTMLInputElement){
+    this.meetingTask = {taskContent:content.value, date:date.valueAsDate};
+    this.meetingTasks.push(this.meetingTask);
+    content.value =" ";
+    date.value="mm/dd/yyyy";
+    date.valueAsDate = null;
+  }
 
-    Add_Clear(content,date: HTMLInputElement){
-   this.meetingTask = {taskContent:content.value, date:date.valueAsDate};
-   this.meetingTasks.push(this.meetingTask);
-   
-   content.value =" ";
+  ngOnInit() {
+    this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
+    this.members=member;
+    this.myOptions = this.convertToMultiSelect();
+    console.log("Members", member);
 
+    })
 
-   //Reset Placeholder
-   date.value="mm/dd/yyyy";
-   date.valueAsDate = null;
-
-
+    this.myform = new FormGroup({
+    name: new FormControl( "" ,Validators.required)
+    });
 
   }
 
+  get name() { return this.myform.get('name'); }
 
+  convertToMultiSelect() {
+    var options = [];
+    
+    for (var i = 0; i < this.members.length; i++) {
 
-
-  ngOnInit() {
-
-
-  this.MemberService.GetMembers().subscribe((member: MeetingMember[])=> {
-  this.members=member;
-
-   this.myOptions = this.convertToMultiSelect();
-
-
-   console.log("Members", member);
-
-   // console.log("MultiSelect",this.convertToMultiSelect());
-
-
- })
-  this.myform = new FormGroup({
-      name: new FormControl( "" ,Validators.required)
-    });
- 
-} 
-get name() { return this.myform.get('name'); }
-
-
-
-
-
-convertToMultiSelect() {
-  var options = [];
-    for (var i = 0; i < this.members.length; i++) {   
-   
-   options.push({ id: this.members[i].id, name: this.members[i].memberName})     
-
- }
-
-   console.log("Options", this.myOptions); 
-   return options;
-
+    options.push({ id: this.members[i].id, name: this.members[i].memberName})
+    }
+    console.log("Options", this.myOptions);
+    return options;
+    }
 }
-
-
-}
-
-
-
-

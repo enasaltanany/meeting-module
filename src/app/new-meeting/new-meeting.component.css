@@ -230,3 +230,7 @@ button[disabled], html input[disabled]
     height: 29px;
     padding: 3px 0px 2px 19px;
 }
+
+.Alert_Message {
+  font-family: "Gill Sans";
+}
