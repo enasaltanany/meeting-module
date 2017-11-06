@@ -1,3 +1,45 @@
+th {
+	font-family: "Gill Sans";
+	font-size: 19px;
+	display: block;
+	color: #4D6D9A;
+	padding: 29px 29px;
+	text-decoration: none;
+}
+
+tr:nth-child(odd) {
+	background-color: #e1dede;
+	font-family: "Gill Sans";
+}
+
+.Meeting-View td {
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 28px;
+}
+
+.Meeting_View_Header th {
+	background: white;
+}
+
+.Search_Field {
+	margin-bottom: 29px;
+}
+
+.Meeting_View_Header {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffff;
+	border-top: solid #4D6D9A;
+	border-bottom: solid #4D6D9A;
+}
+
+.Expand_Members {
+	font-family: "Gill Sans";
+}
+
 .Search_Area {
 	font-family: "Gill Sans";
 	height: 33px;
@@ -23,49 +65,3 @@
 	float: right;
 	margin-right: 13px;
 }
-
-.Meeting_View_Header {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #ffff;
-	border-top: solid #4D6D9A;
-	border-bottom: solid #4D6D9A;
-}
-
-
-
-th {
-	font-family: "Gill Sans";
-	font-size: 19px;
-	display: block;
-	color: #4D6D9A;
-	padding: 29px 29px;
-	text-decoration: none;
-}
-
-tr:nth-child(odd) {
-	background-color: #e1dede;
-	font-family: "Gill Sans";
-}
-
-.Search_Field {
-	margin-bottom: 29px;
-}
-
-.Meeting-View td {
-	font-size: 20px;
-	text-align: center;
-	padding-bottom: 28px;
-}
-
-.Expand_Members {
-	font-family: "Gill Sans";
-}
-
-.Meeting_View_Header th {
-	background: white;
-}
-
-

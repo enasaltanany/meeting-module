@@ -13,10 +13,10 @@ templateUrl: './meeting-list-item.component.html',
 styleUrls: ['./meeting-list-item.component.css'],
 encapsulation: ViewEncapsulation.None
 })
-
 export class MeetingListItemComponent implements OnInit {
   @Input()
   meeting;
+
   @Output()
   expand = new EventEmitter();
   public members: MeetingMember[];
