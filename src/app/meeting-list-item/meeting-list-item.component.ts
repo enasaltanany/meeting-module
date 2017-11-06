@@ -14,10 +14,12 @@ styleUrls: ['./meeting-list-item.component.css'],
 encapsulation: ViewEncapsulation.None
 })
 export class MeetingListItemComponent implements OnInit {
+
   @Input()
   meeting;
 
   @Output()
+
   expand = new EventEmitter();
   public members: MeetingMember[];
   public memberData: MeetingMember[];
@@ -40,7 +42,7 @@ constructor(public activeModal: NgbModal, private MemberService: MemberServiceSe
   }
 
   //Closes The Modal Programatically
-  x(content){
+  closeModal(content){
     this.modalRef.close();
   }
   

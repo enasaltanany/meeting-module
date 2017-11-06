@@ -6,7 +6,31 @@ a {
 	color: black;
 }
 
-.Drop-Down {
+td {
+	padding-left: 69px;
+}
+
+span {
+	font-family: "Gill Sans";
+	font-size: 15px;
+	margin-left: 25px;
+}
+
+h4 {
+	font-family: "Gill Sans";
+	font-size: 25px;
+	color: #4D6D9A;
+}
+
+h2 {
+	font-family: "Gill Sans";
+	font-size: 20px;
+	font-weight: normal;
+	color: #4D6D9A;
+	margin-left: 10px;
+}
+
+.Drop_Down {
 	height: 25px;
 	margin-bottom: 1px;
 	cursor: pointer;
@@ -31,7 +55,7 @@ a {
 	border: 2px solid #4d6d9a;
 	font-family: "Gill Sans";
 	font-size: 17px;
-	margin-bottom: 20px;	/*border-radius: 5px;*/
+	margin-bottom: 20px;
 }
 
 .Button_Details:hover {
@@ -45,31 +69,11 @@ a {
 	font-family: "Gill Sans";
 	font-size: 17px;
 	margin-left: 150px;
-	margin-bottom: 20px;	/*border-radius: 5px;*/
-}
-
-h4 {
-	font-family: "Gill Sans";
-	font-size: 25px;
-	color: #4D6D9A;
-}
-
-h2 {
-	font-family: "Gill Sans";
-	font-size: 20px;
-	font-weight: normal;
-	color: #4D6D9A;
-	margin-left: 10px;
+	margin-bottom: 20px;
 }
 
 .modal.fade .modal-dialog {
 	margin-top: 13%;
-}
-
-span {
-	font-family: "Gill Sans";
-	font-size: 15px;
-	margin-left: 25px;
 }
 
 .no-opacity {
@@ -97,16 +101,16 @@ span {
 
 .Modal_Header {
 	background-color: #4D6D9A;
+	height: 70px;
 }
 
 .Modal_Main_Title {
 	color: white;
+	height: 70px;
+	margin-top: 0px;
+	padding: 17px;
 }
 
 .font {
 	font-family: "Gill Sans";
-}
-
-td {
-	padding-left: 69px;
 }

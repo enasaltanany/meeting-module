@@ -53,6 +53,10 @@ tr:nth-child(odd) {
 	color: white;
 }
 
+.Search_Field {
+	margin-bottom: 29px;
+}
+
 .Add_New_Meeting {
 	font-family: "Gill Sans";
 	font-size: 19px;
@@ -64,4 +68,8 @@ tr:nth-child(odd) {
 	border-color: #4D6D9A;
 	float: right;
 	margin-right: 13px;
+}
+
+.Meeting_View_Header th {
+	background: white;
 }
