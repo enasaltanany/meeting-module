@@ -20,6 +20,19 @@ input {
   height: auto;
 }
 
+ss-multiselect-dropdown {
+  font-family: "Gill Sans";
+}
+
+form {
+  padding-left: 0px;
+}
+
+li {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
 .modal.fade .modal-dialog {
   margin-top: 13%;
 }
@@ -61,14 +74,6 @@ input {
 }
 
 .Meeting_Members {
-  padding-left: 0px;
-}
-
-ss-multiselect-dropdown {
-  font-family: "Gill Sans";
-}
-
-form {
   padding-left: 0px;
 }
 
@@ -154,11 +159,6 @@ form {
   margin-left: 25px;
   margin-top: 5px;
   text-transform: uppercase;
-}
-
-li {
-  margin-left: 30px;
-  margin-top: 5px;
 }
 
 .Task_Date {

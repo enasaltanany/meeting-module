@@ -1,3 +1,18 @@
+label {
+	font-family: "Gill Sans";
+	color: #4D6D9A;
+	font-weight: normal;
+	padding-left: 0px;
+	margin-left: 25px;
+	font-size: 20px;
+}
+
+button[disabled], html input[disabled] {
+	cursor: default;
+	border: transparent;
+	color: transparent;
+}
+
 .Select_Members {
 	height: 200px;
 	overflow: hidden;
@@ -24,15 +39,6 @@
 	margin-left: 0px;
 	font-size: 20px;
 	margin-top: 30px;
-}
-
-label {
-	font-family: "Gill Sans";
-	color: #4D6D9A;
-	font-weight: normal;
-	padding-left: 0px;
-	margin-left: 25px;
-	font-size: 20px;
 }
 
 .Meeting_Members {
@@ -101,7 +107,7 @@ label {
 	display: block;
 }
 
-.Close_Button{
+.Close_Button {
 	background-color: white;
 	border: 2px solid #4d6d9a;
 	font-family: "Gill Sans";
@@ -182,12 +188,6 @@ label {
 	display: inline;
 }
 
-button[disabled], html input[disabled] {
-	cursor: default;
-	border: transparent;
-	color: transparent;
-}
-
 .Title {
 	font-family: "Gill Sans";
 	color: #4D6D9A;
@@ -199,16 +199,15 @@ button[disabled], html input[disabled] {
 }
 
 .alert-danger {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1;
-    width: 200px;
-    margin-left: 46px;
-    height: 29px;
-    padding: 3px 0px 2px 19px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	width: 200px;
+	margin-left: 46px;
+	height: 29px;
+	padding: 3px 0px 2px 19px;
 }
 
 .Alert_Message {
-  font-family: "Gill Sans";
+	font-family: "Gill Sans";
 }
-

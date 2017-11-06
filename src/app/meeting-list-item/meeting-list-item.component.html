@@ -15,7 +15,7 @@
 </td>
 <td>
 	<a (click)="expandClicked()" >
-		<img src="./assets/drop-down.png" class="Drop-Down"
+		<img src="./assets/drop-down.png" class="Drop_Down"
 		[ngClass]="{'Flip_Img' : meeting.expanded}">
 	</a>
 </td>
@@ -79,7 +79,7 @@
 	</div>	
 	<div class="modal-footer">
 		<button type="button" class="Button_Close" (click)="c('Close click')">Close</button>
-		<button  routerLink="/meeting-tasks" routerLinkActive="active-link" type="button" class="Button_Details" (click)="x(content)" >Set Details</button>
+		<button  routerLink="/meeting-tasks" routerLinkActive="active-link" type="button" class="Button_Details" (click)="closeModal(content)" >Set Details</button>
 	</div>
 	</ng-template>
 </body>
