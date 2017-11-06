@@ -11,36 +11,37 @@ td {
 }
 
 span {
-	font-family: "Gill Sans";
 	font-size: 15px;
 	margin-left: 25px;
 }
 
 h4 {
-	font-family: "Gill Sans";
 	font-size: 25px;
 	color: #4D6D9A;
 }
 
 h2 {
-	font-family: "Gill Sans";
 	font-size: 20px;
 	font-weight: normal;
 	color: #4D6D9A;
 	margin-left: 10px;
 }
 
-.Drop_Down {
+.model-font{
+	font-family: "Gill Sans";
+}
+
+.drop-down {
 	height: 25px;
 	margin-bottom: 1px;
 	cursor: pointer;
 }
 
-.Meeting_Title {
+.meeting-title {
 	cursor: pointer;
 }
 
-.Flip_Img {
+.flip-img {
 	-moz-transform: scaleY(-1);
 	-o-transform: scaleY(-1);
 	-webkit-transform: scaleY(-1);
@@ -49,24 +50,22 @@ h2 {
 	-ms-filter: "FlipH";
 }
 
-.Button_Details {
+.button-details {
 	transition-duration: 0.4s;
 	background-color: white;
 	border: 2px solid #4d6d9a;
-	font-family: "Gill Sans";
 	font-size: 17px;
 	margin-bottom: 20px;
 }
 
-.Button_Details:hover {
+.button-details:hover {
 	background-color: #4d6d9a;
 	color: white;
 }
 
-.Button_Close {
+.button-close {
 	background-color: white;
 	border: 2px solid #4d6d9a;
-	font-family: "Gill Sans";
 	font-size: 17px;
 	margin-left: 150px;
 	margin-bottom: 20px;
@@ -84,27 +83,25 @@ h2 {
 	opacity: 0 !important;
 }
 
-.Meeting_Attr {
+.meeting-attr {
 	color: #4D6D9A;
 }
 
-.Modal_Members td {
+.modal-members td {
 	padding-left: 69px;
-	font-family: "Gill Sans";
 }
 
-.Modal_Owner span {
+.modal-owner span {
 	display: inline;
 	padding-left: 44px;
-	font-family: "Gill Sans";
 }
 
-.Modal_Header {
+.modal-header {
 	background-color: #4D6D9A;
 	height: 70px;
 }
 
-.Modal_Main_Title {
+.modal-main-title {
 	color: white;
 	height: 70px;
 	margin-top: 0px;

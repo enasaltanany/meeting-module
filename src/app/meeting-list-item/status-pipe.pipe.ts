@@ -1,27 +1,21 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { MeetingMember } from '../Interface';
-import { MeetingModel } from '../Interface';
+import { MeetingMember,MeetingModel } from '../Interfaces';
 
-
- 
 
 @Pipe({
-  name: 'statusPipe'
-}) 
+	name: 'StatusPipe'
+})
 
+export class StatusPipe implements PipeTransform {
 
-export class statusPipe implements PipeTransform {
+	dictionary = {
+		"done": "Done",
+		"in_progress": "In Progress",
+		"upcoming": "Upcoming"
+	}
 
- dictionary = {
- 	"done": "Done",
- 	"in_progress": "In Progress",
- 	"upcoming": "Upcoming"
- }
+	transform(status: string) {
+		return this.dictionary[status];
+	}
 
-  transform(status: string) {
-  	return this.dictionary[status];
-
-   
-   
-  }
 }

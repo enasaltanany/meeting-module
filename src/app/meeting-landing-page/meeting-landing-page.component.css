@@ -1,75 +1,65 @@
 th {
-	font-family: "Gill Sans";
-	font-size: 19px;
-	display: block;
-	color: #4D6D9A;
-	padding: 29px 29px;
-	text-decoration: none;
+    font-size: 19px;
+    display: block;
+    color: #4D6D9A;
+    padding: 29px 29px;
+    text-decoration: none;
 }
 
 tr:nth-child(odd) {
-	background-color: #e1dede;
-	font-family: "Gill Sans";
+    background-color: #e1dede;
 }
 
-.Meeting-View td {
-	font-size: 20px;
-	text-align: center;
-	padding-bottom: 28px;
+table {
+    font-family: "Gill Sans";
 }
 
-.Meeting_View_Header th {
-	background: white;
+.meeting-view td {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 28px;
 }
 
-.Search_Field {
-	margin-bottom: 29px;
+.meeting-view-header th {
+    background: white;
+    text-transform: uppercase;
 }
 
-.Meeting_View_Header {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #ffff;
-	border-top: solid #4D6D9A;
-	border-bottom: solid #4D6D9A;
+.search-field {
+    margin-bottom: 29px;
 }
 
-.Expand_Members {
-	font-family: "Gill Sans";
+.meeting-view-header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffff;
+    border-top: solid #4D6D9A;
+    border-bottom: solid #4D6D9A;
 }
 
-.Search_Area {
-	font-family: "Gill Sans";
-	height: 33px;
-	margin-left: 8px;
-	font-size: 19px;
-	margin-bottom: 17px;
+.search-area {
+    height: 33px;
+    margin-left: 8px;
+    font-size: 19px;
+    margin-bottom: 17px;
+    font-family: "Gill Sans";
 }
 
-.Add_Meeting_Icon {
-	height: 21px;
-	color: white;
+.add-meeting-icon {
+    height: 21px;
+    color: white;
 }
 
-.Search_Field {
-	margin-bottom: 29px;
-}
-
-.Add_New_Meeting {
-	font-family: "Gill Sans";
-	font-size: 19px;
-	color: white;
-	display: inline-block;
-	background: #4D6D9A;
-	outline: 0px;
-	border-style: solid;
-	border-color: #4D6D9A;
-	float: right;
-	margin-right: 13px;
-}
-
-.Meeting_View_Header th {
-	background: white;
+.add-new-meeting {
+    font-size: 19px;
+    color: white;
+    display: inline-block;
+    background: #4D6D9A;
+    outline: 0px;
+    border-style: solid;
+    border-color: #4D6D9A;
+    float: right;
+    margin-right: 13px;
 }

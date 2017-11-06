@@ -1,4 +1,4 @@
-<td class="col-lg-2 Meeting_Title">
+<td class="col-lg-2 meeting-title">
 	<a (click)="open(content)"> {{meeting?.meetingTitle}} </a>
 </td>
 <td class="col-lg-2">
@@ -11,75 +11,71 @@
 	{{meeting?.location}}
 </td>
 <td class="col-lg-2">
-	{{meeting?.status | statusPipe }}
+	{{meeting?.status | StatusPipe }}
 </td>
 <td>
 	<a (click)="expandClicked()" >
-		<img src="./assets/drop-down.png" class="Drop_Down"
+		<img src="./assets/drop-down.png" class="drop-down"
 		[ngClass]="{'Flip_Img' : meeting.expanded}">
 	</a>
 </td>
-<body>
-	<ng-template #content let-c="close" let-d="dismiss">
-	<div class="Modal_Header">	
-		<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-		<span aria-hidden="true">&times;</span>
-		</button>
-		<h4 class="Modal_Main_Title">Meeting Agenda</h4>
+<ng-template #content let-c="close" let-d="dismiss" class="model-font">
+<div class="modal-header">
+	<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+	<span aria-hidden="true">&times;</span>
+	</button>
+	<h4 class="modal-main-title">Meeting Agenda</h4>
+</div>
+<div>
+	<div class="font">
+		<h2>
+		Meeting Information:
+		</h2>
+		<span class="meeting-attr">
+			Title:
+		</span>
+		{{meeting.meetingTitle}}
+		<br>
+		<span class="meeting-attr">
+			Date:
+		</span>
+		{{meeting.date}}
+		<br>
+		<span class="meeting-attr" >
+			Location:
+		</span>
+		{{meeting.location}}
+		<br>
+		<tbody>
+			<span class="meeting-attr">
+				Members:
+			</span>
+			<tr class="modal-members" *ngFor=" let member of memberData ">
+				<td>
+					{{member.memberName}}
+				</td>
+			</tr>
+		</tbody>
 	</div>
-	<div>
-		<div class="font">
-			<h2>
-			Meeting Information:
-			</h2>
-			
-			<span class="Meeting_Attr">
-				Title:
-			</span>
-			
-			{{meeting.meetingTitle}}
-			<br>
-			<span class="Meeting_Attr">
-				Date:
-			</span>
-			{{meeting.date}}
-			<br>
-			<span class="Meeting_Attr" >
-				Location:
-			</span>
-			{{meeting.location}}
-			<br>		
-			<tbody>
-				<span class="Meeting_Attr">
-					Members:
-				</span>
-				<tr class="Modal_Members" *ngFor=" let member of memberData ">
-					<td>
-						{{member.memberName}}
-					</td>
-				</tr>
-			</tbody>
-		</div>
-		<div class="Modal_Objective">
-			<h2>Objectives:</h2>
-			<tbody>
-				<tr class="Modal_Members" *ngFor=" let objective of meeting.objectives ">
-					<td>
-						{{objective.objectiveContent}}
-					</td>
-				</tr>
-			</tbody>
-		</div>
-		<div class="Modal_Owner" class="font">
-			<h2>Moderator:</h2>		
-			<td>
-				{{meeting.organizer}}
-			</td>
-		</div>
-	</div>	
-	<div class="modal-footer">
-		<button type="button" class="Button_Close" (click)="c('Close click')">Close</button>
-		<button  routerLink="/meeting-tasks" routerLinkActive="active-link" type="button" class="Button_Details" (click)="closeModal(content)" >Set Details</button>
+	<div class="modal-objective">
+		<h2>Objectives:</h2>
+		<tbody>
+			<tr class="modal-members" *ngFor=" let objective of meeting.objectives ">
+				<td>
+					{{objective.objectiveContent}}
+				</td>
+			</tr>
+		</tbody>
 	</div>
-	</ng-template>
-</body>
+	<div class="modal_owner" class="font">
+		<h2>Moderator:</h2>
+		<td>
+			{{meeting.organizer}}
+		</td>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="button-close" (click)="c('Close click')">Close</button>
+	<button  routerLink="/meeting-tasks" routerLinkActive="active-link" type="button" class="button-details" (click)="closeModal(content)" >Set Details</button>
+</div>
+</ng-template>

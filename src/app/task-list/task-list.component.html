@@ -1,64 +1,58 @@
 <div class="container">
-	<h2 class="Title"> Task List </h2>
+	<h2> Task List </h2>
 	<form [formGroup]="myform"  #ngFormName = "ngForm" >
 		<div [hidden]=" myform.submitted">
 			<div class=" form-group">
-				<label for="name" class=" Tasks">
+				<label for="name" class=" tasks">
 					Task
 				</label>
 				<input #content
 				id="name" class="form-control "
-				formControlName="name" class="Task_Input" required>
+				formControlName="name" class="task_input" required>
 				<div *ngIf=" name.invalid && ( name.dirty || name.touched)"
 					class=" alert alert-danger">
-					<div *ngIf=" name.errors.required" class="Alert_Message">
+					<div *ngIf=" name.errors.required">
 						Meeting title is required.
 					</div>
 				</div>
-				<label class="Date">
+				<label class="date">
 					Due Date
 					<input #date type="date">
 				</label>
-				<button class="Add_Task" [disabled]="(content.value==0)" (click)="Add_Clear(content,date)">
-				Add
-				</button>
+				<button class="add-task" [disabled]="(content.value==0)" (click)="addClear(content,date)"> Add </button>
 				<ul *ngFor=" let meetingTask of meetingTasks ">
 					<li >
-						<div class="Task_List">{{meetingTask.taskContent}}</div>
-						<div class="Task_Date">{{meetingTask.date}}</div>
+						<div class="task-list">{{meetingTask.taskContent}}</div>
+						<div class="task-date">{{meetingTask.date}}</div>
 					</li>
 				</ul>	
 				<div>
-					<label class="Drop_Down">
+					<label class="drop-down">
 						Members
 					</label>
-					<div class="Select">
+					<div class="select">
 						<ss-multiselect-dropdown class="Select_Members" [options]="myOptions" [(ngModel)]="optionsModel" [ngModelOptions]="{standalone: true}" class="MultiSelect">	
 						</ss-multiselect-dropdown>
 					</div>
 					<br>
-					<label class="Comment">
-						Comments
-					</label>
+					<label class="comment">Comments</label>
 					<br>
-					<textarea class="Comment_Input"> </textarea>
+					<textarea class="comment-input"></textarea>
 				</div>
 			</div>
-			<button class="Task_Details" (click)="open(popup)">
-			Save
-			</button>
+			<button class="task-details" (click)="open(popup)">Save</button>
 			<ng-template #popup let-c="close" let-d="dismiss">
 			<div class="modal-header">
 				<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-				<span aria-hidden="true">&times;</span>
+					<span aria-hidden="true">&times;</span>
 				</button>
-				<h4 class="Modal_Main_Title"> Task List </h4>
+				<h4 class="modal-main-title"> Task List </h4>
 			</div>
-			<div class="Modal_Content">
+			<div>
 				Your tasks have been saved.
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="button_close" (click)="c('Close click')">Close</button>
+				<button type="button" class="button-close" (click)="c('Close click')">Close</button>
 			</div>
 			</ng-template>
 		</div>

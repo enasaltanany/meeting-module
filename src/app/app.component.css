@@ -3,20 +3,24 @@ a {
 	color: white;
 	margin-bottom: 0px;
 	text-align: left;
-	font-family: "Gill Sans";
 	padding-top: 0px;
 	margin-left: 9px;
+	text-transform: uppercase;
 }
-a:hover{
-    text-decoration: none !important;
+
+a:hover {
+	text-decoration: none !important;
 }
-h1{
-    margin-top: 0px;
+
+h1 {
+	margin-top: 0px;
 }
-.background{
-	background-color: #4D6D9A; 
+
+header {
+	font-family: "Gill Sans" !important;
+}
+
+.background {
+	background-color: #4D6D9A;
 	height: 55px;
-}
-body{
-	font-family: "Gill Sans"!important;
 }

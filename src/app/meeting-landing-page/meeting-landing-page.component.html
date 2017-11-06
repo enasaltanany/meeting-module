@@ -1,32 +1,28 @@
-<div class="Search_Area">
-	<input type="Text" placeholder="Search" class="Search_Field" />
-	<button routerLink="/add-new-meeting" class="Add_New_Meeting ">
-	<img src="./assets/add.png" class="Add_Meeting_Icon">
+<div class="search-area">
+	<input type="Text" placeholder="Search" class="search-field" />
+	<button routerLink="/add-new-meeting" class="add-new-meeting ">
+	<img src="./assets/add.png" class="add-meeting-icon">
 	Add Meeting
 	</button>
 </div>
 <table class="table">
-	<thead class="Meeting_View_Header">
+	<thead class="meeting-view-header">
 		<tr>
-			<th class="col-lg-2"> MEETING TITLE </th>
-			<th class="col-lg-2"> ORGANIZER</th>
-			<th class="col-lg-2"> DATE </th>
-			<th class="col-lg-2"> LOCATION</th>
-			<th class="col-lg-2"> STATUS </th>
-			<th class="col-lg-2"> TEAM</th>
+			<th class="col-lg-2"> Meeeting Title </th>
+			<th class="col-lg-2"> Organizer </th>
+			<th class="col-lg-2"> Date </th>
+			<th class="col-lg-2"> Location </th>
+			<th class="col-lg-2"> Status </th>
+			<th class="col-lg-2"> Team </th>
 		</tr>
 	</thead>
-	
 	<tbody>
 		<ng-container *ngFor="let meeting of meetings">
-		<tr app-meeting-list-item [meeting]="meeting" class="Accordion_Toggle"
+		<tr app-meeting-list-item [meeting]="meeting" class="accordion-toggle"
 			(expand)="toggleExpand($event)">
 		</tr>
-		
-		
-		<tr class="Expand_Members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
+		<tr class="expand-members" app-meeting-list-item-detailed [meeting]="meeting" [hidden]="!meeting.expanded">
 		</tr>
-		
 		</ng-container>
 	</tbody>
 </table>

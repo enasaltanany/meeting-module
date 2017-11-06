@@ -1,5 +1,8 @@
-label {
+div {
 	font-family: "Gill Sans";
+}
+
+label {
 	color: #4D6D9A;
 	font-weight: normal;
 	padding-left: 0px;
@@ -13,7 +16,7 @@ button[disabled], html input[disabled] {
 	color: transparent;
 }
 
-.Select_Members {
+.select-members {
 	height: 200px;
 	overflow: hidden;
 }
@@ -22,17 +25,15 @@ button[disabled], html input[disabled] {
 	margin-top: 13%;
 }
 
-.Objectives_Input_Field {
+.objectives-input-field {
 	font-size: 15px;
 	color: black;
-	font-family: "Gill Sans";
 	height: auto;
 	width: 162px;
 	margin-left: 9px;
 }
 
-.Objectives {
-	font-family: "Gill Sans";
+.objectives {
 	color: #4D6D9A;
 	font-weight: normal;
 	padding-left: 3px;
@@ -41,29 +42,23 @@ button[disabled], html input[disabled] {
 	margin-top: 30px;
 }
 
-.Meeting_Members {
+.meeting-members {
 	padding-left: 0px;
 }
 
-.Input_Fields_Style {
+.input-fields-style {
 	font-size: 15px;
 	color: black;
-	font-family: "Gill Sans";
 	height: auto;
 	width: 162px;
 	margin-left: 9px;
 }
 
-.Select_Members {
-	font-family: "Gill Sans";
-}
-
-.Add_New_Meeting_Form {
+.add-new-meeting-form {
 	padding-left: 0px;
 }
 
-.Set_Meeting_Details {
-	font-family: "Gill Sans";
+.set-meeting-details {
 	font-size: 19px;
 	color: white;
 	display: inline-block;
@@ -76,10 +71,9 @@ button[disabled], html input[disabled] {
 	width: 118px;
 }
 
-.Add_Obj {
+.add-obj {
 	cursor: pointer;
 	color: #4D6D9A;
-	font-family: "Gill Sans";
 	background-color: white;
 	border: 2px solid #4d6d9a;
 	font-size: 17px;
@@ -91,28 +85,26 @@ button[disabled], html input[disabled] {
 	margin-left: 17px;
 }
 
-.Modal_Header {
+.modal-header {
 	background-color: #4D6D9A;
 }
 
-.Modal_Main_Title {
-	font-family: "Gill Sans";
+.modal-main-title {
 	color: white;
 	font-size: 25px;
 	margin-top: 0px;
 	padding: 10px 10px;
 }
 
-.Drop_Down {
+.drop-down {
 	margin-left: 0px;
 	margin-top: 19px;
 	display: block;
 }
 
-.Close_Button {
+.close-button {
 	background-color: white;
 	border: 2px solid #4d6d9a;
-	font-family: "Gill Sans";
 	font-size: 17px;
 	margin-left: 150px;
 	margin-bottom: 20px;
@@ -120,23 +112,20 @@ button[disabled], html input[disabled] {
 	float: right;
 	margin-right: 10px;
 	bottom: 47px;
-
 }
 
 .no-opacity {
 	opacity: 1;
 }
 
-.Modal_Content {
+.modal-content-view {
 	text-align: center;
 	margin: 31px;
 	font-size: 19px;
-	font-family: "Gill Sans";
-    height: 83px;
+	height: 83px;
 }
 
-.Objectives_List {
-	font-family: "Gill Sans";
+.objectives-list {
 	margin-left: 76px;
 	margin-top: 5px;
 }
@@ -150,7 +139,7 @@ button[disabled], html input[disabled] {
 	margin-left: 95px;
 }
 
-.Date {
+.date {
 	margin-left: 44px;
 }
 
@@ -176,7 +165,6 @@ button[disabled], html input[disabled] {
 .form-control {
 	font-size: 15px;
 	color: black;
-	font-family: "Gill Sans";
 	height: 30px;
 	width: 162px;
 	margin-left: 9px;
@@ -196,8 +184,7 @@ button[disabled], html input[disabled] {
 	display: inline;
 }
 
-.Title {
-	font-family: "Gill Sans";
+.title {
 	color: #4D6D9A;
 	font-weight: normal;
 	padding-left: 0px;
@@ -216,11 +203,7 @@ button[disabled], html input[disabled] {
 	padding: 3px 0px 2px 19px;
 }
 
-.Alert_Message {
-	font-family: "Gill Sans";
-}
-
-.Close {
+.close-modal {
 	float: right;
 	background: transparent;
 	border: none;

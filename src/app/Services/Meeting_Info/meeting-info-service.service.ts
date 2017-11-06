@@ -6,13 +6,9 @@ import {MeetingLandingPage} from '../../meeting-landing-page/meeting-landing-pag
 
 @Injectable()
 export class MeetingInfoServiceService {
-	
-  dataObj: any;
 
-  constructor(private http: Http) { 
 
-  	
-  }
+  constructor(private http: Http) { }
 
   getData(){
     return this.http.get('../../assets/json-files/meeting-info.json').map((res :Response) => {
@@ -20,4 +16,3 @@ export class MeetingInfoServiceService {
     })
   }
 }
-  
